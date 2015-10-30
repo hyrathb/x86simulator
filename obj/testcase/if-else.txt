@@ -1,0 +1,67 @@
+
+obj/testcase/if-else：     文件格式 elf32-i386
+
+
+Disassembly of section .text:
+
+00100000 <start>:
+  100000:	bd 00 00 00 00       	mov    $0x0,%ebp
+  100005:	bc 00 00 00 08       	mov    $0x8000000,%esp
+  10000a:	83 ec 10             	sub    $0x10,%esp
+  10000d:	e8 54 00 00 00       	call   100066 <main>
+
+00100012 <if_else>:
+  100012:	55                   	push   %ebp
+  100013:	89 e5                	mov    %esp,%ebp
+  100015:	83 ec 10             	sub    $0x10,%esp
+  100018:	81 7d 08 f4 01 00 00 	cmpl   $0x1f4,0x8(%ebp)
+  10001f:	7e 09                	jle    10002a <if_else+0x18>
+  100021:	c7 45 fc 96 00 00 00 	movl   $0x96,-0x4(%ebp)
+  100028:	eb 37                	jmp    100061 <if_else+0x4f>
+  10002a:	81 7d 08 2c 01 00 00 	cmpl   $0x12c,0x8(%ebp)
+  100031:	7e 09                	jle    10003c <if_else+0x2a>
+  100033:	c7 45 fc 64 00 00 00 	movl   $0x64,-0x4(%ebp)
+  10003a:	eb 25                	jmp    100061 <if_else+0x4f>
+  10003c:	83 7d 08 64          	cmpl   $0x64,0x8(%ebp)
+  100040:	7e 09                	jle    10004b <if_else+0x39>
+  100042:	c7 45 fc 4b 00 00 00 	movl   $0x4b,-0x4(%ebp)
+  100049:	eb 16                	jmp    100061 <if_else+0x4f>
+  10004b:	83 7d 08 32          	cmpl   $0x32,0x8(%ebp)
+  10004f:	7e 09                	jle    10005a <if_else+0x48>
+  100051:	c7 45 fc 32 00 00 00 	movl   $0x32,-0x4(%ebp)
+  100058:	eb 07                	jmp    100061 <if_else+0x4f>
+  10005a:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  100061:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  100064:	c9                   	leave  
+  100065:	c3                   	ret    
+
+00100066 <main>:
+  100066:	55                   	push   %ebp
+  100067:	89 e5                	mov    %esp,%ebp
+  100069:	83 ec 10             	sub    $0x10,%esp
+  10006c:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
+  100073:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  10007a:	eb 33                	jmp    1000af <main+0x49>
+  10007c:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  10007f:	8b 04 85 20 11 10 00 	mov    0x101120(,%eax,4),%eax
+  100086:	50                   	push   %eax
+  100087:	e8 86 ff ff ff       	call   100012 <if_else>
+  10008c:	83 c4 04             	add    $0x4,%esp
+  10008f:	89 c1                	mov    %eax,%ecx
+  100091:	8b 45 f8             	mov    -0x8(%ebp),%eax
+  100094:	8d 50 01             	lea    0x1(%eax),%edx
+  100097:	89 55 f8             	mov    %edx,-0x8(%ebp)
+  10009a:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  1000a1:	39 c1                	cmp    %eax,%ecx
+  1000a3:	74 06                	je     1000ab <main+0x45>
+  1000a5:	b8 01 00 00 00       	mov    $0x1,%eax
+  1000aa:	d6                   	(bad)  
+  1000ab:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  1000af:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  1000b2:	83 f8 0d             	cmp    $0xd,%eax
+  1000b5:	76 c5                	jbe    10007c <main+0x16>
+  1000b7:	b8 00 00 00 00       	mov    $0x0,%eax
+  1000bc:	d6                   	(bad)  
+  1000bd:	b8 00 00 00 00       	mov    $0x0,%eax
+  1000c2:	c9                   	leave  
+  1000c3:	c3                   	ret    

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="nemu" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/nemu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="/home/hyr/Documents/source/c/ics2015/obj/testcase/add" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/nemu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="/home/hyr/Documents/source/c/ics2015/obj/testcase/hello" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add library="readline" />
+		</Linker>
+		<Unit filename="include/common.h" />
+		<Unit filename="include/cpu/decode/decode.h" />
+		<Unit filename="include/cpu/decode/modrm.h" />
+		<Unit filename="include/cpu/decode/operand.h" />
+		<Unit filename="include/cpu/exec/helper.h" />
+		<Unit filename="include/cpu/exec/template-end.h" />
+		<Unit filename="include/cpu/exec/template-start.h" />
+		<Unit filename="include/cpu/helper.h" />
+		<Unit filename="include/cpu/reg.h" />
+		<Unit filename="include/debug.h" />
+		<Unit filename="include/device/i8259.h" />
+		<Unit filename="include/device/mmio.h" />
+		<Unit filename="include/device/port-io.h" />
+		<Unit filename="include/macro.h" />
+		<Unit filename="include/memory/memory.h" />
+		<Unit filename="include/misc.h" />
+		<Unit filename="include/monitor/expr.h" />
+		<Unit filename="include/monitor/monitor.h" />
+		<Unit filename="include/monitor/watchpoint.h" />
+		<Unit filename="include/nemu.h" />
+		<Unit filename="src/cpu/decode/decode-template.h" />
+		<Unit filename="src/cpu/decode/decode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/decode/modrm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/all-instr.h" />
+		<Unit filename="src/cpu/exec/arith/add-template.h" />
+		<Unit filename="src/cpu/exec/arith/add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/add.h" />
+		<Unit filename="src/cpu/exec/arith/dec-template.h" />
+		<Unit filename="src/cpu/exec/arith/dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/dec.h" />
+		<Unit filename="src/cpu/exec/arith/div-template.h" />
+		<Unit filename="src/cpu/exec/arith/div.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/div.h" />
+		<Unit filename="src/cpu/exec/arith/idiv-template.h" />
+		<Unit filename="src/cpu/exec/arith/idiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/idiv.h" />
+		<Unit filename="src/cpu/exec/arith/imul-template.h" />
+		<Unit filename="src/cpu/exec/arith/imul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/imul.h" />
+		<Unit filename="src/cpu/exec/arith/inc-template.h" />
+		<Unit filename="src/cpu/exec/arith/inc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/inc.h" />
+		<Unit filename="src/cpu/exec/arith/mul-template.h" />
+		<Unit filename="src/cpu/exec/arith/mul.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/mul.h" />
+		<Unit filename="src/cpu/exec/arith/neg-template.h" />
+		<Unit filename="src/cpu/exec/arith/neg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/neg.h" />
+		<Unit filename="src/cpu/exec/arith/sub-template.h" />
+		<Unit filename="src/cpu/exec/arith/sub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/sub.h" />
+		<Unit filename="src/cpu/exec/data-mov/mov-template.h" />
+		<Unit filename="src/cpu/exec/data-mov/mov.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/data-mov/mov.h" />
+		<Unit filename="src/cpu/exec/data-mov/xchg-template.h" />
+		<Unit filename="src/cpu/exec/data-mov/xchg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/data-mov/xchg.h" />
+		<Unit filename="src/cpu/exec/exec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/call-template.h" />
+		<Unit filename="src/cpu/exec/jmp/call.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/call.h" />
+		<Unit filename="src/cpu/exec/jmp/ja-template.h" />
+		<Unit filename="src/cpu/exec/jmp/ja.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/ja.h" />
+		<Unit filename="src/cpu/exec/jmp/jae-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jae.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jae.h" />
+		<Unit filename="src/cpu/exec/jmp/jb-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jb.h" />
+		<Unit filename="src/cpu/exec/jmp/jbe-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jbe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jbe.h" />
+		<Unit filename="src/cpu/exec/jmp/jc-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jc.h" />
+		<Unit filename="src/cpu/exec/jmp/jcxz-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jcxz.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jcxz.h" />
+		<Unit filename="src/cpu/exec/jmp/je-template.h" />
+		<Unit filename="src/cpu/exec/jmp/je.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/je.h" />
+		<Unit filename="src/cpu/exec/jmp/jg-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jg.h" />
+		<Unit filename="src/cpu/exec/jmp/jge-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jge.h" />
+		<Unit filename="src/cpu/exec/jmp/jl-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jl.h" />
+		<Unit filename="src/cpu/exec/jmp/jle-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jle.h" />
+		<Unit filename="src/cpu/exec/jmp/jmp-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jmp.h" />
+		<Unit filename="src/cpu/exec/jmp/jne-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jne.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jne.h" />
+		<Unit filename="src/cpu/exec/jmp/jno-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jno.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jno.h" />
+		<Unit filename="src/cpu/exec/jmp/jnp-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jnp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jnp.h" />
+		<Unit filename="src/cpu/exec/jmp/jns-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jns.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jns.h" />
+		<Unit filename="src/cpu/exec/jmp/jo-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jo.h" />
+		<Unit filename="src/cpu/exec/jmp/jp-template.h" />
+		<Unit filename="src/cpu/exec/jmp/jp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/jp.h" />
+		<Unit filename="src/cpu/exec/jmp/js-template.h" />
+		<Unit filename="src/cpu/exec/jmp/js.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/js.h" />
+		<Unit filename="src/cpu/exec/jmp/leave.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/leave.h" />
+		<Unit filename="src/cpu/exec/jmp/ret-template.h" />
+		<Unit filename="src/cpu/exec/jmp/ret.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/jmp/ret.h" />
+		<Unit filename="src/cpu/exec/logic/and-template.h" />
+		<Unit filename="src/cpu/exec/logic/and.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/and.h" />
+		<Unit filename="src/cpu/exec/logic/cmp-template.h" />
+		<Unit filename="src/cpu/exec/logic/cmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/cmp.h" />
+		<Unit filename="src/cpu/exec/logic/not-template.h" />
+		<Unit filename="src/cpu/exec/logic/not.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/not.h" />
+		<Unit filename="src/cpu/exec/logic/or-template.h" />
+		<Unit filename="src/cpu/exec/logic/or.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/or.h" />
+		<Unit filename="src/cpu/exec/logic/sar-template.h" />
+		<Unit filename="src/cpu/exec/logic/sar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/sar.h" />
+		<Unit filename="src/cpu/exec/logic/shl-template.h" />
+		<Unit filename="src/cpu/exec/logic/shl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/shl.h" />
+		<Unit filename="src/cpu/exec/logic/shr-template.h" />
+		<Unit filename="src/cpu/exec/logic/shr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/shr.h" />
+		<Unit filename="src/cpu/exec/logic/shrd-template.h" />
+		<Unit filename="src/cpu/exec/logic/shrd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/shrd.h" />
+		<Unit filename="src/cpu/exec/logic/test-template.h" />
+		<Unit filename="src/cpu/exec/logic/test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/test.h" />
+		<Unit filename="src/cpu/exec/logic/xor-template.h" />
+		<Unit filename="src/cpu/exec/logic/xor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/logic/xor.h" />
+		<Unit filename="src/cpu/exec/misc/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/misc/misc.h" />
+		<Unit filename="src/cpu/exec/prefix/prefix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/prefix/prefix.h" />
+		<Unit filename="src/cpu/exec/special/special.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/special/special.h" />
+		<Unit filename="src/cpu/exec/stack/push-template.h" />
+		<Unit filename="src/cpu/exec/stack/push.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/stack/push.h" />
+		<Unit filename="src/cpu/exec/string/rep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/string/rep.h" />
+		<Unit filename="src/cpu/reg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/i8259.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/ide.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/io/mmio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/io/port-io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/keyboard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/sdl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/sdl.h" />
+		<Unit filename="src/device/serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/vga-palette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/vga.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/device/vga.h" />
+		<Unit filename="src/lib/logo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memory/burst.h" />
+		<Unit filename="src/memory/dram.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memory/memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/monitor/cpu-exec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/monitor/debug/elf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/monitor/debug/expr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/monitor/debug/ui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/monitor/debug/watchpoint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/monitor/monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

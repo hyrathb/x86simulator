@@ -1,0 +1,67 @@
+
+obj/testcase/fact：     文件格式 elf32-i386
+
+
+Disassembly of section .text:
+
+00100000 <start>:
+  100000:	bd 00 00 00 00       	mov    $0x0,%ebp
+  100005:	bc 00 00 00 08       	mov    $0x8000000,%esp
+  10000a:	83 ec 10             	sub    $0x10,%esp
+  10000d:	e8 31 00 00 00       	call   100043 <main>
+
+00100012 <fact>:
+  100012:	55                   	push   %ebp
+  100013:	89 e5                	mov    %esp,%ebp
+  100015:	83 ec 08             	sub    $0x8,%esp
+  100018:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
+  10001c:	74 06                	je     100024 <fact+0x12>
+  10001e:	83 7d 08 01          	cmpl   $0x1,0x8(%ebp)
+  100022:	75 07                	jne    10002b <fact+0x19>
+  100024:	b8 01 00 00 00       	mov    $0x1,%eax
+  100029:	eb 16                	jmp    100041 <fact+0x2f>
+  10002b:	8b 45 08             	mov    0x8(%ebp),%eax
+  10002e:	83 e8 01             	sub    $0x1,%eax
+  100031:	83 ec 0c             	sub    $0xc,%esp
+  100034:	50                   	push   %eax
+  100035:	e8 d8 ff ff ff       	call   100012 <fact>
+  10003a:	83 c4 10             	add    $0x10,%esp
+  10003d:	0f af 45 08          	imul   0x8(%ebp),%eax
+  100041:	c9                   	leave  
+  100042:	c3                   	ret    
+
+00100043 <main>:
+  100043:	8d 4c 24 04          	lea    0x4(%esp),%ecx
+  100047:	83 e4 f0             	and    $0xfffffff0,%esp
+  10004a:	ff 71 fc             	pushl  -0x4(%ecx)
+  10004d:	55                   	push   %ebp
+  10004e:	89 e5                	mov    %esp,%ebp
+  100050:	51                   	push   %ecx
+  100051:	83 ec 14             	sub    $0x14,%esp
+  100054:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
+  10005b:	eb 3c                	jmp    100099 <main+0x56>
+  10005d:	83 ec 0c             	sub    $0xc,%esp
+  100060:	ff 75 f4             	pushl  -0xc(%ebp)
+  100063:	e8 aa ff ff ff       	call   100012 <fact>
+  100068:	83 c4 10             	add    $0x10,%esp
+  10006b:	89 c2                	mov    %eax,%edx
+  10006d:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  100070:	89 14 85 60 11 10 00 	mov    %edx,0x101160(,%eax,4)
+  100077:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  10007a:	8b 14 85 60 11 10 00 	mov    0x101160(,%eax,4),%edx
+  100081:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  100084:	8b 04 85 20 11 10 00 	mov    0x101120(,%eax,4),%eax
+  10008b:	39 c2                	cmp    %eax,%edx
+  10008d:	74 06                	je     100095 <main+0x52>
+  10008f:	b8 01 00 00 00       	mov    $0x1,%eax
+  100094:	d6                   	(bad)  
+  100095:	83 45 f4 01          	addl   $0x1,-0xc(%ebp)
+  100099:	83 7d f4 0c          	cmpl   $0xc,-0xc(%ebp)
+  10009d:	7e be                	jle    10005d <main+0x1a>
+  10009f:	b8 00 00 00 00       	mov    $0x0,%eax
+  1000a4:	d6                   	(bad)  
+  1000a5:	b8 00 00 00 00       	mov    $0x0,%eax
+  1000aa:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+  1000ad:	c9                   	leave  
+  1000ae:	8d 61 fc             	lea    -0x4(%ecx),%esp
+  1000b1:	c3                   	ret    

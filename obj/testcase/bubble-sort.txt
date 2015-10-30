@@ -1,0 +1,84 @@
+
+obj/testcase/bubble-sort：     文件格式 elf32-i386
+
+
+Disassembly of section .text:
+
+00100000 <start>:
+  100000:	bd 00 00 00 00       	mov    $0x0,%ebp
+  100005:	bc 00 00 00 08       	mov    $0x8000000,%esp
+  10000a:	83 ec 10             	sub    $0x10,%esp
+  10000d:	e8 85 00 00 00       	call   100097 <main>
+
+00100012 <bubble_sort>:
+  100012:	55                   	push   %ebp
+  100013:	89 e5                	mov    %esp,%ebp
+  100015:	83 ec 10             	sub    $0x10,%esp
+  100018:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
+  10001f:	eb 6d                	jmp    10008e <bubble_sort+0x7c>
+  100021:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  100028:	eb 53                	jmp    10007d <bubble_sort+0x6b>
+  10002a:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  10002d:	8b 14 85 60 11 10 00 	mov    0x101160(,%eax,4),%edx
+  100034:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  100037:	83 c0 01             	add    $0x1,%eax
+  10003a:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  100041:	39 c2                	cmp    %eax,%edx
+  100043:	7e 34                	jle    100079 <bubble_sort+0x67>
+  100045:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  100048:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  10004f:	89 45 f4             	mov    %eax,-0xc(%ebp)
+  100052:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  100055:	83 c0 01             	add    $0x1,%eax
+  100058:	8b 14 85 60 11 10 00 	mov    0x101160(,%eax,4),%edx
+  10005f:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  100062:	89 14 85 60 11 10 00 	mov    %edx,0x101160(,%eax,4)
+  100069:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  10006c:	8d 50 01             	lea    0x1(%eax),%edx
+  10006f:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  100072:	89 04 95 60 11 10 00 	mov    %eax,0x101160(,%edx,4)
+  100079:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  10007d:	b8 63 00 00 00       	mov    $0x63,%eax
+  100082:	2b 45 f8             	sub    -0x8(%ebp),%eax
+  100085:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+  100088:	7f a0                	jg     10002a <bubble_sort+0x18>
+  10008a:	83 45 f8 01          	addl   $0x1,-0x8(%ebp)
+  10008e:	83 7d f8 63          	cmpl   $0x63,-0x8(%ebp)
+  100092:	7e 8d                	jle    100021 <bubble_sort+0xf>
+  100094:	90                   	nop
+  100095:	c9                   	leave  
+  100096:	c3                   	ret    
+
+00100097 <main>:
+  100097:	55                   	push   %ebp
+  100098:	89 e5                	mov    %esp,%ebp
+  10009a:	83 ec 10             	sub    $0x10,%esp
+  10009d:	e8 70 ff ff ff       	call   100012 <bubble_sort>
+  1000a2:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  1000a9:	eb 19                	jmp    1000c4 <main+0x2d>
+  1000ab:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  1000ae:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  1000b5:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+  1000b8:	74 06                	je     1000c0 <main+0x29>
+  1000ba:	b8 01 00 00 00       	mov    $0x1,%eax
+  1000bf:	d6                   	(bad)  
+  1000c0:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  1000c4:	83 7d fc 63          	cmpl   $0x63,-0x4(%ebp)
+  1000c8:	7e e1                	jle    1000ab <main+0x14>
+  1000ca:	e8 43 ff ff ff       	call   100012 <bubble_sort>
+  1000cf:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  1000d6:	eb 19                	jmp    1000f1 <main+0x5a>
+  1000d8:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  1000db:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  1000e2:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+  1000e5:	74 06                	je     1000ed <main+0x56>
+  1000e7:	b8 01 00 00 00       	mov    $0x1,%eax
+  1000ec:	d6                   	(bad)  
+  1000ed:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  1000f1:	83 7d fc 63          	cmpl   $0x63,-0x4(%ebp)
+  1000f5:	7e e1                	jle    1000d8 <main+0x41>
+  1000f7:	b8 00 00 00 00       	mov    $0x0,%eax
+  1000fc:	d6                   	(bad)  
+  1000fd:	b8 00 00 00 00       	mov    $0x0,%eax
+  100102:	c9                   	leave  
+  100103:	c3                   	ret    
