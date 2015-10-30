@@ -383,17 +383,19 @@
 	"cpu/decode/modrm.h"
 	"cpu/exec/template-end.h"
 
-1446213281 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/exec.c
+1446217463 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/exec.c
 	"cpu/helper.h"
 	"cpu/decode/modrm.h"
 	"all-instr.h"
 
-1446213075 /home/hyr/Documents/source/c/nemu/src/cpu/exec/all-instr.h
+1446217354 /home/hyr/Documents/source/c/nemu/src/cpu/exec/all-instr.h
 	"prefix/prefix.h"
 	"data-mov/mov.h"
 	"data-mov/xchg.h"
 	"data-mov/movsx.h"
 	"data-mov/movzx.h"
+	"data-mov/movs.h"
+	"data-mov/stos.h"
 	"arith/dec.h"
 	"arith/inc.h"
 	"arith/neg.h"
@@ -404,6 +406,7 @@
 	"arith/sub.h"
 	"arith/add.h"
 	"arith/adc.h"
+	"arith/sbb.h"
 	"logic/and.h"
 	"logic/or.h"
 	"logic/not.h"
@@ -840,4 +843,30 @@
 1446212987 /home/hyr/Documents/source/c/nemu/src/cpu/exec/arith/adc-template.h
 	"cpu/exec/template-start.h"
 	"cpu/exec/template-end.h"
+
+1446214197 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/arith/sbb.c
+	"cpu/exec/helper.h"
+	"sbb-template.h"
+	"sbb-template.h"
+	"sbb-template.h"
+
+1446214197 /home/hyr/Documents/source/c/nemu/src/cpu/exec/arith/sbb-template.h
+	"cpu/exec/template-start.h"
+	"cpu/exec/template-end.h"
+
+1446214197 /home/hyr/Documents/source/c/nemu/src/cpu/exec/arith/sbb.h
+
+1446216596 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/movs.c
+	"movs.h"
+	"cpu/exec/helper.h"
+	"cpu/decode/modrm.h"
+
+1446216415 /home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/movs.h
+
+1446217336 /home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/stos.h
+
+1446217390 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/stos.c
+	"stos.h"
+	"cpu/exec/helper.h"
+	"cpu/decode/modrm.h"
 
