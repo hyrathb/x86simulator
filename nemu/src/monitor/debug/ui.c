@@ -58,7 +58,9 @@ static int cmd_q(char *args)
 
 static int cmd_si(char *args)
 {
-    if (is_number(args))
+    if (!args)
+        cpu_exec(1);
+    else if (is_number(args))
         cpu_exec(atoi(args));
     else
         printf("Invalid argument\n");
@@ -142,6 +144,7 @@ static int cmd_info(char *args)
             for (i=4; i<8; ++i)
                 printf("%s\t0x%x\t\t0x%x\n", regsl[i],  cpu.gpr[i]._32, cpu.gpr[i]._32);
             printf("eip\t0x%x\n", cpu.eip);
+            printf("CF:%d  PF:%d  AF:%d  ZF:%d  SF:%d  TF:%d  IF:%d  DF:%d  OF:%d\n", cpu.eflags.CF, cpu.eflags.PF, cpu.eflags.AF, cpu.eflags.ZF, cpu.eflags.SF, cpu.eflags.TF, cpu.eflags.IF, cpu.eflags.DF, cpu.eflags.OF);
         }
         else if (*args == 'w')
         {

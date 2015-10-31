@@ -6,9 +6,9 @@ static void do_execute() {
 	DATA_TYPE result = op_dest->val + op_src->val;
 	OPERAND_W(op_dest, result);
 
-	cpu.eflags.CF = ((uint32_t)op_dest->val < (uint32_t)(-op_src->val));
+	cpu.eflags.CF = ((uint32_t)(result) < (uint32_t)(op_src->val));
 	cpu.eflags.PF = (result ^ (result >> 1) ^ (result >> 2) ^ (result >> 3) ^ (result >> 4) ^ (result >> 5) ^ (result >> 6) ^ (result >> 7)) & 0x01;
-    cpu.eflags.AF = ((uint32_t)(op_dest->val & 0x0f) < (uint32_t)(-(op_src->val & 0x0f)));
+    cpu.eflags.AF = ((uint32_t)(result & 0x0f) < (uint32_t)(op_src->val & 0x0f));
 	cpu.eflags.ZF = (result == 0);
 #if DATA_BYTE == 1
     cpu.eflags.SF = (result >> 7) & 0x1;
