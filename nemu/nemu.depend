@@ -383,12 +383,12 @@
 	"cpu/decode/modrm.h"
 	"cpu/exec/template-end.h"
 
-1446217463 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/exec.c
+1446264732 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/exec.c
 	"cpu/helper.h"
 	"cpu/decode/modrm.h"
 	"all-instr.h"
 
-1446217354 /home/hyr/Documents/source/c/nemu/src/cpu/exec/all-instr.h
+1446264538 /home/hyr/Documents/source/c/nemu/src/cpu/exec/all-instr.h
 	"prefix/prefix.h"
 	"data-mov/mov.h"
 	"data-mov/xchg.h"
@@ -396,6 +396,7 @@
 	"data-mov/movzx.h"
 	"data-mov/movs.h"
 	"data-mov/stos.h"
+	"data-mov/setcc.h"
 	"arith/dec.h"
 	"arith/inc.h"
 	"arith/neg.h"
@@ -861,12 +862,22 @@
 	"cpu/exec/helper.h"
 	"cpu/decode/modrm.h"
 
-1446216415 /home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/movs.h
+1446217702 /home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/movs.h
+	"cpu/exec/helper.h"
 
-1446217336 /home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/stos.h
+1446217718 /home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/stos.h
+	"cpu/exec/helper.h"
 
 1446217390 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/stos.c
 	"stos.h"
 	"cpu/exec/helper.h"
 	"cpu/decode/modrm.h"
+
+1446264500 source:/home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/setcc.c
+	"setcc.h"
+	"cpu/exec/helper.h"
+	"cpu/decode/modrm.h"
+
+1446264518 /home/hyr/Documents/source/c/nemu/src/cpu/exec/data-mov/setcc.h
+	"cpu/exec/helper.h"
 

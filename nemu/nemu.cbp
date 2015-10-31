@@ -65,6 +65,11 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/cpu/exec/all-instr.h" />
+		<Unit filename="src/cpu/exec/arith/adc-template.h" />
+		<Unit filename="src/cpu/exec/arith/adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/adc.h" />
 		<Unit filename="src/cpu/exec/arith/add-template.h" />
 		<Unit filename="src/cpu/exec/arith/add.c">
 			<Option compilerVar="CC" />
@@ -105,6 +110,11 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/cpu/exec/arith/neg.h" />
+		<Unit filename="src/cpu/exec/arith/sbb-template.h" />
+		<Unit filename="src/cpu/exec/arith/sbb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/arith/sbb.h" />
 		<Unit filename="src/cpu/exec/arith/sub-template.h" />
 		<Unit filename="src/cpu/exec/arith/sub.c">
 			<Option compilerVar="CC" />
@@ -115,6 +125,24 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/cpu/exec/data-mov/mov.h" />
+		<Unit filename="src/cpu/exec/data-mov/movs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/data-mov/movs.h" />
+		<Unit filename="src/cpu/exec/data-mov/movsx-template.h" />
+		<Unit filename="src/cpu/exec/data-mov/movsx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/data-mov/movsx.h" />
+		<Unit filename="src/cpu/exec/data-mov/movzx-template.h" />
+		<Unit filename="src/cpu/exec/data-mov/movzx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/data-mov/movzx.h" />
+		<Unit filename="src/cpu/exec/data-mov/stos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/data-mov/stos.h" />
 		<Unit filename="src/cpu/exec/data-mov/xchg-template.h" />
 		<Unit filename="src/cpu/exec/data-mov/xchg.c">
 			<Option compilerVar="CC" />
@@ -148,11 +176,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/cpu/exec/jmp/jbe.h" />
-		<Unit filename="src/cpu/exec/jmp/jc-template.h" />
-		<Unit filename="src/cpu/exec/jmp/jc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src/cpu/exec/jmp/jc.h" />
 		<Unit filename="src/cpu/exec/jmp/jcxz-template.h" />
 		<Unit filename="src/cpu/exec/jmp/jcxz.c">
 			<Option compilerVar="CC" />
@@ -294,6 +317,11 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/cpu/exec/special/special.h" />
+		<Unit filename="src/cpu/exec/stack/pop-template.h" />
+		<Unit filename="src/cpu/exec/stack/pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/stack/pop.h" />
 		<Unit filename="src/cpu/exec/stack/push-template.h" />
 		<Unit filename="src/cpu/exec/stack/push.c">
 			<Option compilerVar="CC" />
