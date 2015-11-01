@@ -19,7 +19,7 @@ static void do_execute() {
 #if DATA_BYTE == 4
     cpu.eflags.SF = (result >> 31) & 0x1;
 #endif // DATA_BYTE
-	cpu.eflags.OF = (((int32_t)(op_dest->val) > 0) && ((int32_t)(op_src->val) < 0) && ((int32_t)result < 0)) || (((int32_t)(op_dest->val) < 0) && ((int32_t)(op_src->val) > 0) && ((int32_t)result > 0));
+	cpu.eflags.OF = (((int32_t)(op_dest->val) >= 0) && ((int32_t)(op_src->val) < 0) && ((int32_t)result < 0)) || (((int32_t)(op_dest->val) <= 0) && ((int32_t)(op_src->val) > 0) && ((int32_t)result > 0));
 
 
 	print_asm_template2();

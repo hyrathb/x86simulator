@@ -495,7 +495,7 @@
 	"sub-template.h"
 	"sub-template.h"
 
-1445323680 /home/hyr/Documents/source/c/nemu/src/cpu/exec/arith/sub-template.h
+1446377989 /home/hyr/Documents/source/c/nemu/src/cpu/exec/arith/sub-template.h
 	"cpu/exec/template-start.h"
 	"cpu/exec/template-end.h"
 
@@ -519,7 +519,7 @@
 	"cmp-template.h"
 	"cmp-template.h"
 
-1445310530 /home/hyr/Documents/source/c/nemu/src/cpu/exec/logic/cmp-template.h
+1446377989 /home/hyr/Documents/source/c/nemu/src/cpu/exec/logic/cmp-template.h
 	"cpu/exec/template-start.h"
 	"cpu/exec/template-end.h"
 
