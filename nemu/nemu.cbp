@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="/home/hyr/Documents/source/c/ics2015/obj/testcase/add" />
+				<Option parameters="/home/hyr/Documents/source/c/x86simulator/obj/testcase/bit" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -139,6 +139,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/cpu/exec/data-mov/movzx.h" />
+		<Unit filename="src/cpu/exec/data-mov/setcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cpu/exec/data-mov/setcc.h" />
 		<Unit filename="src/cpu/exec/data-mov/stos.c">
 			<Option compilerVar="CC" />
 		</Unit>

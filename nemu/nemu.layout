@@ -2,389 +2,139 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src/cpu/exec/jmp/jo.c" open="1" top="0" tabpos="97" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/idiv-template.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="355" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/movzx-template.h" open="1" top="0" tabpos="130" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="245" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jl.h" open="1" top="0" tabpos="107" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/adc.h" open="1" top="0" tabpos="137" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="262" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jp.c" open="1" top="0" tabpos="98" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/mov.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="114" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jne.c" open="1" top="0" tabpos="93" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/and-template.h" open="1" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="216" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/stack/pop.c" open="1" top="0" tabpos="124" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="28" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/ja.c" open="1" top="0" tabpos="85" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/shl-template.h" open="1" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/sar.h" open="1" top="0" tabpos="82" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/stos.h" open="1" top="0" tabpos="148" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="77" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/exec.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4594" topLine="126" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/call.c" open="1" top="0" tabpos="64" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="29" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jnp.c" open="1" top="0" tabpos="95" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/sbb.h" open="1" top="0" tabpos="144" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="262" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jo.h" open="1" top="0" tabpos="102" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/macro.h" open="1" top="0" tabpos="43" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="72" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/cpu/exec/template-end.h" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/je.h" open="1" top="0" tabpos="57" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/monitor/monitor.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/xchg.c" open="1" top="0" tabpos="131" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/add.h" open="1" top="0" tabpos="68" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="36" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/monitor/debug/ui.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4611" topLine="208" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/leave.c" open="1" top="0" tabpos="67" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="359" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jno.c" open="1" top="0" tabpos="94" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/movzx-template.h" open="1" top="0" tabpos="133" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="568" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/div.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jb.c" open="1" top="0" tabpos="87" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/leave.h" open="1" top="0" tabpos="66" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="70" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/idiv.h" open="1" top="0" tabpos="83" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="83" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/sbb-template.h" open="1" top="0" tabpos="143" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="132" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/test.c" open="1" top="0" tabpos="48" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="242" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/add-template.h" open="1" top="0" tabpos="62" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/neg.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/stack/pop.h" open="1" top="0" tabpos="123" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="214" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/ret.c" open="1" top="0" tabpos="72" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="50" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jcxz-template.h" open="1" top="0" tabpos="116" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="37" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/cpu/decode/modrm.h" open="1" top="0" tabpos="127" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="330" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src/main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="360" topLine="0" />
+			<Cursor1 position="365" topLine="2" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/data-mov/mov-template.h" open="1" top="0" tabpos="77" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="434" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/movs.c" open="1" top="0" tabpos="147" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/xchg.c" open="1" top="0" tabpos="129" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/misc/misc.h" open="1" top="0" tabpos="139" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/imul.c" open="1" top="0" tabpos="80" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/decode/decode-template.h" open="1" top="0" tabpos="118" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="434" topLine="163" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/adc-template.h" open="1" top="0" tabpos="133" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="25" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/movsx.c" open="1" top="0" tabpos="128" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/movs.h" open="1" top="0" tabpos="143" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="145" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/not.c" open="1" top="0" tabpos="58" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/leave.h" open="1" top="0" tabpos="65" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="70" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/sub-template.h" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="include/cpu/exec/template-start.h" open="1" top="0" tabpos="117" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="614" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="include/cpu/exec/helper.h" open="1" top="0" tabpos="150" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="760" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/movsx.h" open="1" top="0" tabpos="125" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/monitor/expr.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="90" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/shrd-template.h" open="1" top="0" tabpos="32" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/decode/modrm.c" open="1" top="0" tabpos="127" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="833" topLine="0" />
+			<Cursor1 position="1704" topLine="82" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/prefix/prefix.h" open="1" top="0" tabpos="120" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="55" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jns.h" open="1" top="0" tabpos="103" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/sar.h" open="1" top="0" tabpos="81" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/data-mov/movsx.h" open="1" top="0" tabpos="126" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jnp.c" open="1" top="0" tabpos="94" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/mul.c" open="1" top="0" tabpos="80" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/not-template.h" open="1" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="286" topLine="0" />
+			<Cursor1 position="231" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jg.h" open="1" top="0" tabpos="110" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/or.h" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="259" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jb.h" open="1" top="0" tabpos="112" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/sar-template.h" open="1" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/movzx.c" open="1" top="0" tabpos="132" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="95" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/idiv.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/add-template.h" open="1" top="0" tabpos="61" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="290" topLine="0" />
+			<Cursor1 position="745" topLine="13" />
 		</Cursor>
 	</File>
-	<File name="src/monitor/debug/elf.c" open="1" top="0" tabpos="61" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/mov-template.h" open="1" top="0" tabpos="76" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2189" topLine="50" />
-		</Cursor>
-	</File>
-	<File name="src/monitor/monitor.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1969" topLine="54" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/decode/decode-template.h" open="1" top="0" tabpos="119" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1645" topLine="114" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/decode/decode.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="93" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/string/rep.c" open="1" top="0" tabpos="142" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="617" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/xor.c" open="1" top="0" tabpos="49" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jae.h" open="1" top="0" tabpos="114" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/xchg.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/misc/misc.c" open="1" top="0" tabpos="45" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/memory/memory.c" open="1" top="0" tabpos="76" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="673" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="src/memory/dram.c" open="0" top="0" tabpos="81" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="725" topLine="21" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/movzx.c" open="1" top="0" tabpos="135" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="66" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/not.c" open="1" top="0" tabpos="59" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/sub.h" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="37" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jbe.h" open="1" top="0" tabpos="112" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/imul.c" open="1" top="0" tabpos="81" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jb.h" open="1" top="0" tabpos="113" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/inc-template.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="157" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/common.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="436" topLine="0" />
+			<Cursor1 position="192" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src/cpu/exec/logic/cmp-template.h" open="1" top="0" tabpos="50" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="513" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/shr.h" open="1" top="0" tabpos="79" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="73" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/call-template.h" open="1" top="0" tabpos="74" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="595" topLine="12" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/reg.c" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="63" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/adc.c" open="1" top="0" tabpos="140" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="385" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/cpu/helper.h" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="184" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/cpu/exec/template-start.h" open="1" top="0" tabpos="118" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="21" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/cmp.c" open="1" top="0" tabpos="52" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="379" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src/cpu/exec/arith/mul.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -397,49 +147,14 @@
 			<Cursor1 position="50" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/dec-template.h" open="0" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="716" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/monitor/debug/watchpoint.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1970" topLine="64" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/ret.h" open="1" top="0" tabpos="70" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="85" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jae.c" open="1" top="0" tabpos="86" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/sub.c" open="1" top="0" tabpos="41" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/cmp.h" open="1" top="0" tabpos="51" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="279" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jp-template.h" open="1" top="0" tabpos="122" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/je.h" open="1" top="0" tabpos="56" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/stack/pop-template.h" open="1" top="0" tabpos="117" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="148" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jmp.c" open="0" top="0" tabpos="90" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="49" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/not-template.h" open="1" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="231" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include/debug.h" open="1" top="0" tabpos="42" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -447,157 +162,57 @@
 			<Cursor1 position="558" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/test-template.h" open="1" top="0" tabpos="46" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/leave.c" open="1" top="0" tabpos="66" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="426" topLine="0" />
+			<Cursor1 position="359" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/sub.c" open="1" top="0" tabpos="41" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/sub-template.h" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="1" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/movs.h" open="1" top="1" tabpos="146" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="49" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jbe-template.h" open="0" top="0" tabpos="92" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/special/special.c" open="1" top="0" tabpos="75" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="897" topLine="7" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/imul.h" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jno.c" open="1" top="0" tabpos="93" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/div.h" open="1" top="0" tabpos="84" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/stack/push-template.h" open="1" top="0" tabpos="151" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="79" topLine="0" />
+			<Cursor1 position="110" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/imul-template.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/sbb.c" open="1" top="0" tabpos="142" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="645" topLine="0" />
+			<Cursor1 position="379" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/stack/push.c" open="1" top="0" tabpos="54" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="16" />
-		</Cursor>
-	</File>
-	<File name="include/cpu/decode/decode.h" open="0" top="0" tabpos="69" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jle.h" open="1" top="0" tabpos="107" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jmp-template.h" open="1" top="0" tabpos="73" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jmp-template.h" open="1" top="0" tabpos="72" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="209" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/string/rep.h" open="1" top="0" tabpos="141" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/shr.h" open="1" top="0" tabpos="78" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="73" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include/misc.h" open="1" top="0" tabpos="44" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/sbb-template.h" open="1" top="0" tabpos="140" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="132" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/shrd.h" open="1" top="0" tabpos="78" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/stos.h" open="1" top="0" tabpos="145" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="77" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/data-mov/movsx.c" open="1" top="0" tabpos="130" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/and.h" open="1" top="0" tabpos="36" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="37" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/shr-template.h" open="1" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/cmp.c" open="1" top="0" tabpos="52" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="353" topLine="0" />
+			<Cursor1 position="379" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jp.h" open="1" top="0" tabpos="101" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/movsx-template.h" open="1" top="0" tabpos="125" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="429" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/test.h" open="1" top="0" tabpos="47" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="116" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/idiv-template.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="355" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/arith/dec.h" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jge.h" open="1" top="0" tabpos="109" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="31" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jne.h" open="1" top="0" tabpos="106" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/cpu/reg.h" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2160" topLine="53" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/all-instr.h" open="1" top="0" tabpos="132" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="190" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/decode/modrm.c" open="1" top="0" tabpos="129" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1806" topLine="81" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jg.c" open="1" top="0" tabpos="89" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jmp.h" open="0" top="0" tabpos="91" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="58" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jno.h" open="1" top="0" tabpos="105" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jns.h" open="1" top="0" tabpos="102" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -607,39 +222,59 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jl.c" open="1" top="0" tabpos="91" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/exec.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7358" topLine="221" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/shl-template.h" open="1" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include/cpu/exec/helper.h" open="1" top="0" tabpos="56" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/stack/push.c" open="1" top="0" tabpos="54" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="349" topLine="0" />
+			<Cursor1 position="0" topLine="34" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/add.c" open="1" top="0" tabpos="69" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jmp.c" open="0" top="0" tabpos="90" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="49" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/adc.c" open="1" top="0" tabpos="137" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="385" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/div-template.h" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="375" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jg.h" open="1" top="0" tabpos="109" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/monitor/debug/expr.c" open="1" top="0" tabpos="60" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/mul.c" open="1" top="0" tabpos="79" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3001" topLine="126" />
+			<Cursor1 position="286" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/je.c" open="1" top="0" tabpos="58" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jcxz.h" open="1" top="0" tabpos="110" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jcxz.c" open="1" top="0" tabpos="88" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/reg.c" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="63" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/adc-template.h" open="1" top="0" tabpos="136" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/js.c" open="1" top="0" tabpos="98" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="202" topLine="2" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src/cpu/exec/logic/or-template.h" open="1" top="0" tabpos="31" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -647,57 +282,322 @@
 			<Cursor1 position="639" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/js.h" open="1" top="0" tabpos="100" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/monitor/debug/watchpoint.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1970" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/stos.c" open="1" top="0" tabpos="146" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="166" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="include/misc.h" open="1" top="0" tabpos="44" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/and.h" open="1" top="0" tabpos="36" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jbe.h" open="1" top="0" tabpos="111" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/decode/decode.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="91" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/monitor/cpu-exec.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1655" topLine="50" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/call.h" open="1" top="0" tabpos="62" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/test.h" open="1" top="0" tabpos="47" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="116" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/stack/pop.c" open="1" top="0" tabpos="123" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/imul-template.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="645" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/xor.h" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="270" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/and-template.h" open="1" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="216" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/shrd-template.h" open="1" top="0" tabpos="32" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="833" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/sar-template.h" open="1" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jp.h" open="1" top="0" tabpos="100" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/ret-template.h" open="1" top="0" tabpos="70" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="140" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/prefix/prefix.h" open="1" top="0" tabpos="119" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="55" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/add.h" open="1" top="0" tabpos="67" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="36" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jcxz-template.h" open="1" top="0" tabpos="115" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="37" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include/monitor/expr.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/monitor/debug/ui.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1126" topLine="54" />
+		</Cursor>
+	</File>
+	<File name="include/cpu/decode/modrm.h" open="0" top="0" tabpos="127" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="199" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="include/monitor/watchpoint.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="246" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/je-template.h" open="1" top="0" tabpos="64" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="195" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jae.c" open="1" top="0" tabpos="85" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jnp.h" open="1" top="0" tabpos="103" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/macro.h" open="1" top="0" tabpos="43" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="72" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jmp.h" open="0" top="0" tabpos="91" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="58" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/idiv.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="290" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jge.c" open="1" top="0" tabpos="89" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jle.c" open="1" top="0" tabpos="91" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/string/rep.c" open="1" top="0" tabpos="139" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="617" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jbe-template.h" open="0" top="0" tabpos="92" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/xchg-template.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="272" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/dec.h" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jne.h" open="1" top="0" tabpos="105" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/misc/misc.h" open="1" top="0" tabpos="136" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="90" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/stack/push-template.h" open="0" top="0" tabpos="88" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/test.c" open="1" top="0" tabpos="48" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="84" topLine="0" />
+			<Cursor1 position="242" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jge.c" open="1" top="0" tabpos="90" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/setcc.h" open="1" top="0" tabpos="147" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="228" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/sbb.c" open="1" top="0" tabpos="145" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/misc/misc.c" open="1" top="0" tabpos="45" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="379" topLine="0" />
+			<Cursor1 position="192" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/stack/push.h" open="1" top="0" tabpos="53" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/mov.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="415" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jle.c" open="1" top="0" tabpos="92" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/js.h" open="1" top="0" tabpos="99" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/js.c" open="1" top="0" tabpos="99" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/ja.h" open="1" top="0" tabpos="114" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jnp.h" open="1" top="0" tabpos="104" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/cpu/helper.h" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="266" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/xor-template.h" open="1" top="0" tabpos="33" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="215" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/memory/memory.c" open="1" top="0" tabpos="75" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="673" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/div.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/add.c" open="1" top="0" tabpos="68" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="338" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jae.h" open="1" top="0" tabpos="113" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/shrd.h" open="1" top="0" tabpos="77" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/sbb.h" open="1" top="0" tabpos="141" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="262" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/mov.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="114" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jo.h" open="1" top="0" tabpos="101" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jo.c" open="1" top="0" tabpos="96" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/monitor/debug/expr.c" open="1" top="0" tabpos="59" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8969" topLine="377" />
+		</Cursor>
+	</File>
+	<File name="include/common.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="436" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/special/special.c" open="1" top="0" tabpos="74" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="897" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="include/cpu/decode/operand.h" open="1" top="0" tabpos="126" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="380" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/xchg.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/ja.c" open="1" top="0" tabpos="84" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/monitor/debug/elf.c" open="1" top="0" tabpos="60" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2189" topLine="50" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/dec.c" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="68" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/movs.c" open="1" top="0" tabpos="144" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jp-template.h" open="1" top="0" tabpos="121" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/stack/pop.h" open="1" top="0" tabpos="122" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="214" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jg.c" open="1" top="0" tabpos="88" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -707,37 +607,127 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/div-template.h" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/test-template.h" open="1" top="0" tabpos="46" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="375" topLine="0" />
+			<Cursor1 position="263" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/ret-template.h" open="1" top="0" tabpos="71" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/setcc.c" open="1" top="0" tabpos="148" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="140" topLine="0" />
+			<Cursor1 position="745" topLine="2" />
 		</Cursor>
 	</File>
-	<File name="include/monitor/watchpoint.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/cpu/decode/decode.h" open="1" top="0" tabpos="149" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="246" topLine="0" />
+			<Cursor1 position="155" topLine="33" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/data-mov/stos.c" open="1" top="0" tabpos="149" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/arith/div.h" open="1" top="0" tabpos="83" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="266" topLine="0" />
+			<Cursor1 position="79" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/je-template.h" open="1" top="0" tabpos="65" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/call.c" open="1" top="0" tabpos="63" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="195" topLine="0" />
+			<Cursor1 position="29" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/and.c" open="1" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/movzx.h" open="1" top="0" tabpos="131" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="94" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/cpu/reg.h" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2160" topLine="53" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/mul-template.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="528" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/stack/pop-template.h" open="1" top="1" tabpos="116" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="148" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/adc.h" open="1" top="0" tabpos="134" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="262" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jb.c" open="1" top="0" tabpos="86" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jns.c" open="1" top="0" tabpos="96" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jle.h" open="1" top="0" tabpos="106" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/stack/push.h" open="1" top="0" tabpos="53" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/memory/dram.c" open="0" top="0" tabpos="81" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1110" topLine="41" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/je.c" open="1" top="0" tabpos="57" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/ret.h" open="1" top="0" tabpos="69" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="85" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/dec-template.h" open="0" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="716" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/inc-template.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="157" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/call-template.h" open="1" top="0" tabpos="73" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="595" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/special/special.h" open="1" top="0" tabpos="135" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/data-mov/movsx-template.h" open="1" top="0" tabpos="124" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="429" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/string/rep.h" open="1" top="0" tabpos="138" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/xor.c" open="1" top="0" tabpos="49" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/monitor/monitor.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jne.c" open="1" top="0" tabpos="92" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -747,24 +737,49 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/data-mov/movzx.h" open="1" top="0" tabpos="134" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/data-mov/mov.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="94" topLine="0" />
+			<Cursor1 position="313" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/ja.h" open="1" top="0" tabpos="115" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jns.c" open="1" top="0" tabpos="95" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/xor-template.h" open="1" top="0" tabpos="33" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="215" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/special/special.h" open="1" top="0" tabpos="138" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jl.c" open="1" top="0" tabpos="90" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/ret.c" open="1" top="0" tabpos="71" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="50" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/neg.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jge.h" open="1" top="0" tabpos="108" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="31" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/idiv.h" open="1" top="0" tabpos="82" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="83" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/all-instr.h" open="0" top="0" tabpos="132" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="218" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/logic/cmp.h" open="1" top="0" tabpos="51" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="279" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include/memory/memory.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -772,60 +787,55 @@
 			<Cursor1 position="564" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include/cpu/decode/operand.h" open="1" top="0" tabpos="128" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="257" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/monitor/cpu-exec.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1739" topLine="55" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/logic/or.h" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="259" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/call.h" open="1" top="0" tabpos="63" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/js-template.h" open="1" top="0" tabpos="120" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/mul-template.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/shr-template.h" open="1" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="528" topLine="0" />
+			<Cursor1 position="353" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/jmp/jl.h" open="1" top="0" tabpos="108" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/data-mov/xchg-template.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="272" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/js-template.h" open="1" top="0" tabpos="121" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jp.c" open="1" top="0" tabpos="97" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/logic/xor.h" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="270" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/cpu/exec/jmp/jcxz.h" open="1" top="0" tabpos="111" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/logic/and.c" open="1" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cpu/exec/arith/dec.c" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cpu/exec/jmp/jcxz.c" open="1" top="0" tabpos="87" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="68" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="0701ea9056331f2500d207ed00000002=0;nemu:src/main.c,1;nemu:src/monitor/monitor.c,2;nemu:src/monitor/debug/ui.c,3;nemu:src/monitor/debug/watchpoint.c,4;nemu:src/monitor/cpu-exec.c,5;nemu:include/memory/memory.h,6;nemu:include/monitor/watchpoint.h,7;nemu:src/cpu/exec/exec.c,8;nemu:src/cpu/exec/data-mov/mov.h,9;nemu:src/cpu/exec/data-mov/mov.c,10;nemu:src/cpu/exec/arith/mul.h,11;nemu:src/cpu/exec/arith/mul-template.h,12;nemu:src/cpu/exec/data-mov/xchg.h,13;nemu:src/cpu/decode/decode.c,14;nemu:src/cpu/exec/arith/dec.c,15;nemu:src/cpu/exec/arith/div.c,16;nemu:src/cpu/exec/arith/idiv.c,17;nemu:src/cpu/exec/arith/idiv-template.h,18;nemu:src/cpu/exec/arith/imul-template.h,19;nemu:src/cpu/exec/arith/inc-template.h,20;nemu:src/cpu/exec/arith/neg-template.h,21;nemu:include/cpu/helper.h,22;nemu:src/cpu/reg.c,23;nemu:include/cpu/reg.h,24;nemu:src/cpu/exec/arith/neg.h,25;nemu:src/cpu/exec/arith/sub-template.h,26;nemu:src/cpu/exec/arith/imul.h,27;nemu:src/cpu/exec/logic/and-template.h,28;nemu:src/cpu/exec/logic/sar-template.h,29;nemu:src/cpu/exec/logic/shl-template.h,30;nemu:src/cpu/exec/logic/or-template.h,31;nemu:src/cpu/exec/logic/shrd-template.h,32;nemu:src/cpu/exec/logic/xor-template.h,33;nemu:src/cpu/exec/logic/shr-template.h,34;nemu:src/cpu/exec/logic/not-template.h,35;nemu:src/cpu/exec/logic/and.h,36;nemu:src/cpu/exec/logic/not.h,37;nemu:src/cpu/exec/logic/or.h,38;nemu:src/cpu/exec/arith/sub.h,39;nemu:src/cpu/exec/logic/and.c,40;nemu:src/cpu/exec/arith/sub.c,41;nemu:include/debug.h,42;nemu:include/macro.h,43;nemu:include/misc.h,44;nemu:src/cpu/exec/misc/misc.c,45;nemu:src/cpu/exec/logic/test-template.h,46;nemu:src/cpu/exec/logic/test.h,47;nemu:src/cpu/exec/logic/test.c,48;nemu:src/cpu/exec/logic/xor.c,49;nemu:src/cpu/exec/logic/cmp-template.h,50;nemu:src/cpu/exec/logic/cmp.h,51;nemu:src/cpu/exec/logic/cmp.c,52;nemu:src/cpu/exec/stack/push.h,53;nemu:src/cpu/exec/stack/push.c,54;nemu:src/cpu/exec/prefix/prefix.c,55;nemu:include/cpu/exec/helper.h,56;nemu:src/cpu/exec/jmp/je.h,57;nemu:src/cpu/exec/jmp/je.c,58;nemu:src/cpu/exec/logic/not.c,59;nemu:src/monitor/debug/expr.c,60;nemu:src/monitor/debug/elf.c,61;nemu:src/cpu/exec/arith/add-template.h,62;nemu:src/cpu/exec/jmp/call.h,63;nemu:src/cpu/exec/jmp/call.c,64;nemu:src/cpu/exec/jmp/je-template.h,65;nemu:src/cpu/exec/jmp/leave.h,66;nemu:src/cpu/exec/jmp/leave.c,67;nemu:src/cpu/exec/arith/add.h,68;nemu:src/cpu/exec/arith/add.c,69;nemu:src/cpu/exec/jmp/ret.h,70;nemu:src/cpu/exec/jmp/ret-template.h,71;nemu:src/cpu/exec/jmp/ret.c,72;nemu:src/cpu/exec/jmp/jmp-template.h,73;nemu:src/cpu/exec/jmp/call-template.h,74;nemu:src/cpu/exec/special/special.c,75;nemu:src/memory/memory.c,76;nemu:src/cpu/exec/data-mov/mov-template.h,77;nemu:src/cpu/exec/logic/shrd.h,78;nemu:src/cpu/exec/logic/shr.h,79;nemu:src/cpu/exec/arith/mul.c,80;nemu:src/cpu/exec/arith/imul.c,81;nemu:src/cpu/exec/logic/sar.h,82;nemu:src/cpu/exec/arith/idiv.h,83;nemu:src/cpu/exec/arith/div.h,84;nemu:src/cpu/exec/jmp/ja.c,85;nemu:src/cpu/exec/jmp/jae.c,86;nemu:src/cpu/exec/jmp/jb.c,87;nemu:src/cpu/exec/jmp/jcxz.c,88;nemu:src/cpu/exec/jmp/jg.c,89;nemu:src/cpu/exec/jmp/jge.c,90;nemu:src/cpu/exec/jmp/jl.c,91;nemu:src/cpu/exec/jmp/jle.c,92;nemu:src/cpu/exec/jmp/jne.c,93;nemu:src/cpu/exec/jmp/jno.c,94;nemu:src/cpu/exec/jmp/jnp.c,95;nemu:src/cpu/exec/jmp/jns.c,96;nemu:src/cpu/exec/jmp/jo.c,97;nemu:src/cpu/exec/jmp/jp.c,98;nemu:src/cpu/exec/jmp/js.c,99;nemu:src/cpu/exec/jmp/js.h,100;nemu:src/cpu/exec/jmp/jp.h,101;nemu:src/cpu/exec/jmp/jo.h,102;nemu:src/cpu/exec/jmp/jns.h,103;nemu:src/cpu/exec/jmp/jnp.h,104;nemu:src/cpu/exec/jmp/jno.h,105;nemu:src/cpu/exec/jmp/jne.h,106;nemu:src/cpu/exec/jmp/jle.h,107;nemu:src/cpu/exec/jmp/jl.h,108;nemu:src/cpu/exec/jmp/jge.h,109;nemu:src/cpu/exec/jmp/jg.h,110;nemu:src/cpu/exec/jmp/jcxz.h,111;nemu:src/cpu/exec/jmp/jbe.h,112;nemu:src/cpu/exec/jmp/jb.h,113;nemu:src/cpu/exec/jmp/jae.h,114;nemu:src/cpu/exec/jmp/ja.h,115;nemu:src/cpu/exec/jmp/jcxz-template.h,116;nemu:src/cpu/exec/stack/pop-template.h,117;nemu:include/cpu/exec/template-start.h,118;nemu:src/cpu/decode/decode-template.h,119;nemu:src/cpu/exec/prefix/prefix.h,120;nemu:src/cpu/exec/jmp/js-template.h,121;nemu:src/cpu/exec/jmp/jp-template.h,122;nemu:src/cpu/exec/stack/pop.h,123;nemu:src/cpu/exec/stack/pop.c,124;nemu:src/cpu/exec/data-mov/movsx-template.h,125;nemu:src/cpu/exec/data-mov/movsx.h,126;nemu:include/cpu/decode/modrm.h,127;nemu:include/cpu/decode/operand.h,128;nemu:src/cpu/decode/modrm.c,129;nemu:src/cpu/exec/data-mov/movsx.c,130;nemu:src/cpu/exec/data-mov/xchg.c,131;nemu:src/cpu/exec/all-instr.h,132;nemu:src/cpu/exec/data-mov/movzx-template.h,133;nemu:src/cpu/exec/data-mov/movzx.h,134;nemu:src/cpu/exec/data-mov/movzx.c,135;nemu:src/cpu/exec/arith/adc-template.h,136;nemu:src/cpu/exec/arith/adc.h,137;nemu:src/cpu/exec/special/special.h,138;nemu:src/cpu/exec/misc/misc.h,139;nemu:src/cpu/exec/arith/adc.c,140;nemu:src/cpu/exec/string/rep.h,141;nemu:src/cpu/exec/string/rep.c,142;nemu:src/cpu/exec/arith/sbb-template.h,143;nemu:src/cpu/exec/arith/sbb.h,144;nemu:src/cpu/exec/arith/sbb.c,*145;nemu:src/cpu/exec/data-mov/movs.h,146;nemu:src/cpu/exec/data-mov/movs.c,147;nemu:src/cpu/exec/data-mov/stos.h,148;nemu:src/cpu/exec/data-mov/stos.c@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=510;besth=146;minw=510;minh=146;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0701ea9056331f2500d207ed00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="src/cpu/exec/arith/sub.h" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/monitor/monitor.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1969" topLine="54" />
+		</Cursor>
+	</File>
+	<File name="include/cpu/exec/template-end.h" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/jmp/jno.h" open="1" top="0" tabpos="104" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cpu/exec/arith/imul.h" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="06c1e3005635a6d900d6469900000002=0;nemu:src/main.c,1;nemu:src/monitor/monitor.c,2;nemu:src/monitor/debug/ui.c,3;nemu:src/monitor/debug/watchpoint.c,4;nemu:src/monitor/cpu-exec.c,5;nemu:include/memory/memory.h,6;nemu:include/monitor/watchpoint.h,7;nemu:src/cpu/exec/exec.c,8;nemu:src/cpu/exec/data-mov/mov.h,9;nemu:src/cpu/exec/data-mov/mov.c,10;nemu:src/cpu/exec/arith/mul.h,11;nemu:src/cpu/exec/arith/mul-template.h,12;nemu:src/cpu/exec/data-mov/xchg.h,13;nemu:src/cpu/decode/decode.c,14;nemu:src/cpu/exec/arith/dec.c,15;nemu:src/cpu/exec/arith/div.c,16;nemu:src/cpu/exec/arith/idiv.c,17;nemu:src/cpu/exec/arith/idiv-template.h,18;nemu:src/cpu/exec/arith/imul-template.h,19;nemu:src/cpu/exec/arith/inc-template.h,20;nemu:src/cpu/exec/arith/neg-template.h,21;nemu:include/cpu/helper.h,22;nemu:src/cpu/reg.c,23;nemu:include/cpu/reg.h,24;nemu:src/cpu/exec/arith/neg.h,25;nemu:src/cpu/exec/arith/sub-template.h,26;nemu:src/cpu/exec/arith/imul.h,27;nemu:src/cpu/exec/logic/and-template.h,28;nemu:src/cpu/exec/logic/sar-template.h,29;nemu:src/cpu/exec/logic/shl-template.h,30;nemu:src/cpu/exec/logic/or-template.h,31;nemu:src/cpu/exec/logic/shrd-template.h,32;nemu:src/cpu/exec/logic/xor-template.h,33;nemu:src/cpu/exec/logic/shr-template.h,34;nemu:src/cpu/exec/logic/not-template.h,35;nemu:src/cpu/exec/logic/and.h,36;nemu:src/cpu/exec/logic/not.h,37;nemu:src/cpu/exec/logic/or.h,38;nemu:src/cpu/exec/arith/sub.h,39;nemu:src/cpu/exec/logic/and.c,40;nemu:src/cpu/exec/arith/sub.c,41;nemu:include/debug.h,42;nemu:include/macro.h,43;nemu:include/misc.h,44;nemu:src/cpu/exec/misc/misc.c,45;nemu:src/cpu/exec/logic/test-template.h,46;nemu:src/cpu/exec/logic/test.h,47;nemu:src/cpu/exec/logic/test.c,48;nemu:src/cpu/exec/logic/xor.c,49;nemu:src/cpu/exec/logic/cmp-template.h,50;nemu:src/cpu/exec/logic/cmp.h,51;nemu:src/cpu/exec/logic/cmp.c,52;nemu:src/cpu/exec/stack/push.h,53;nemu:src/cpu/exec/stack/push.c,54;nemu:src/cpu/exec/prefix/prefix.c,55;nemu:src/cpu/exec/jmp/je.h,56;nemu:src/cpu/exec/jmp/je.c,57;nemu:src/cpu/exec/logic/not.c,58;nemu:src/monitor/debug/expr.c,59;nemu:src/monitor/debug/elf.c,60;nemu:src/cpu/exec/arith/add-template.h,61;nemu:src/cpu/exec/jmp/call.h,62;nemu:src/cpu/exec/jmp/call.c,63;nemu:src/cpu/exec/jmp/je-template.h,64;nemu:src/cpu/exec/jmp/leave.h,65;nemu:src/cpu/exec/jmp/leave.c,66;nemu:src/cpu/exec/arith/add.h,67;nemu:src/cpu/exec/arith/add.c,68;nemu:src/cpu/exec/jmp/ret.h,69;nemu:src/cpu/exec/jmp/ret-template.h,70;nemu:src/cpu/exec/jmp/ret.c,71;nemu:src/cpu/exec/jmp/jmp-template.h,72;nemu:src/cpu/exec/jmp/call-template.h,73;nemu:src/cpu/exec/special/special.c,74;nemu:src/memory/memory.c,75;nemu:src/cpu/exec/data-mov/mov-template.h,76;nemu:src/cpu/exec/logic/shrd.h,77;nemu:src/cpu/exec/logic/shr.h,78;nemu:src/cpu/exec/arith/mul.c,79;nemu:src/cpu/exec/arith/imul.c,80;nemu:src/cpu/exec/logic/sar.h,81;nemu:src/cpu/exec/arith/idiv.h,82;nemu:src/cpu/exec/arith/div.h,83;nemu:src/cpu/exec/jmp/ja.c,84;nemu:src/cpu/exec/jmp/jae.c,85;nemu:src/cpu/exec/jmp/jb.c,86;nemu:src/cpu/exec/jmp/jcxz.c,87;nemu:src/cpu/exec/jmp/jg.c,88;nemu:src/cpu/exec/jmp/jge.c,89;nemu:src/cpu/exec/jmp/jl.c,90;nemu:src/cpu/exec/jmp/jle.c,91;nemu:src/cpu/exec/jmp/jne.c,92;nemu:src/cpu/exec/jmp/jno.c,93;nemu:src/cpu/exec/jmp/jnp.c,94;nemu:src/cpu/exec/jmp/jns.c,95;nemu:src/cpu/exec/jmp/jo.c,96;nemu:src/cpu/exec/jmp/jp.c,97;nemu:src/cpu/exec/jmp/js.c,98;nemu:src/cpu/exec/jmp/js.h,99;nemu:src/cpu/exec/jmp/jp.h,100;nemu:src/cpu/exec/jmp/jo.h,101;nemu:src/cpu/exec/jmp/jns.h,102;nemu:src/cpu/exec/jmp/jnp.h,103;nemu:src/cpu/exec/jmp/jno.h,104;nemu:src/cpu/exec/jmp/jne.h,105;nemu:src/cpu/exec/jmp/jle.h,106;nemu:src/cpu/exec/jmp/jl.h,107;nemu:src/cpu/exec/jmp/jge.h,108;nemu:src/cpu/exec/jmp/jg.h,109;nemu:src/cpu/exec/jmp/jcxz.h,110;nemu:src/cpu/exec/jmp/jbe.h,111;nemu:src/cpu/exec/jmp/jb.h,112;nemu:src/cpu/exec/jmp/jae.h,113;nemu:src/cpu/exec/jmp/ja.h,114;nemu:src/cpu/exec/jmp/jcxz-template.h,*115;nemu:src/cpu/exec/stack/pop-template.h,116;nemu:include/cpu/exec/template-start.h,117;nemu:src/cpu/decode/decode-template.h,118;nemu:src/cpu/exec/prefix/prefix.h,119;nemu:src/cpu/exec/jmp/js-template.h,120;nemu:src/cpu/exec/jmp/jp-template.h,121;nemu:src/cpu/exec/stack/pop.h,122;nemu:src/cpu/exec/stack/pop.c,123;nemu:src/cpu/exec/data-mov/movsx-template.h,124;nemu:src/cpu/exec/data-mov/movsx.h,125;nemu:include/cpu/decode/operand.h,126;nemu:src/cpu/decode/modrm.c,127;nemu:src/cpu/exec/data-mov/movsx.c,128;nemu:src/cpu/exec/data-mov/xchg.c,129;nemu:src/cpu/exec/data-mov/movzx-template.h,130;nemu:src/cpu/exec/data-mov/movzx.h,131;nemu:src/cpu/exec/data-mov/movzx.c,132;nemu:src/cpu/exec/arith/adc-template.h,133;nemu:src/cpu/exec/arith/adc.h,134;nemu:src/cpu/exec/special/special.h,135;nemu:src/cpu/exec/misc/misc.h,136;nemu:src/cpu/exec/arith/adc.c,137;nemu:src/cpu/exec/string/rep.h,138;nemu:src/cpu/exec/string/rep.c,139;nemu:src/cpu/exec/arith/sbb-template.h,140;nemu:src/cpu/exec/arith/sbb.h,141;nemu:src/cpu/exec/arith/sbb.c,142;nemu:src/cpu/exec/data-mov/movs.h,143;nemu:src/cpu/exec/data-mov/movs.c,144;nemu:src/cpu/exec/data-mov/stos.h,145;nemu:src/cpu/exec/data-mov/stos.c,146;nemu:src/cpu/exec/data-mov/setcc.h,147;nemu:src/cpu/exec/data-mov/setcc.c,148;nemu:include/cpu/decode/decode.h,149;nemu:include/cpu/exec/helper.h,150;nemu:src/cpu/exec/stack/push-template.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=510;besth=167;minw=510;minh=167;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=06c1e3005635a6d900d6469900000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

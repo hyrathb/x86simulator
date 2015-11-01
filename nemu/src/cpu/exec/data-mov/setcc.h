@@ -6,7 +6,8 @@
 #define make_setcc(name, cond) make_helper(name){\
     int len = decode_rm_b(eip+1);\
     write_operand_b((op_src), (cond));\
-    return len;\
+    print_asm("%s %s", str(name), op_src->str);\
+    return len+1;\
 }
 
 make_helper(seta);
