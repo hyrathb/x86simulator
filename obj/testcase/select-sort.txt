@@ -1,0 +1,85 @@
+
+obj/testcase/select-sort：     文件格式 elf32-i386
+
+
+Disassembly of section .text:
+
+00100000 <start>:
+  100000:	bd 00 00 00 00       	mov    $0x0,%ebp
+  100005:	bc 00 00 00 08       	mov    $0x8000000,%esp
+  10000a:	83 ec 10             	sub    $0x10,%esp
+  10000d:	e8 83 00 00 00       	call   100095 <main>
+
+00100012 <select_sort>:
+  100012:	55                   	push   %ebp
+  100013:	89 e5                	mov    %esp,%ebp
+  100015:	83 ec 10             	sub    $0x10,%esp
+  100018:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  10001f:	eb 6b                	jmp    10008c <select_sort+0x7a>
+  100021:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  100024:	89 45 f4             	mov    %eax,-0xc(%ebp)
+  100027:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  10002a:	83 c0 01             	add    $0x1,%eax
+  10002d:	89 45 f8             	mov    %eax,-0x8(%ebp)
+  100030:	eb 22                	jmp    100054 <select_sort+0x42>
+  100032:	8b 45 f8             	mov    -0x8(%ebp),%eax
+  100035:	8b 14 85 60 11 10 00 	mov    0x101160(,%eax,4),%edx
+  10003c:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  10003f:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  100046:	39 c2                	cmp    %eax,%edx
+  100048:	7d 06                	jge    100050 <select_sort+0x3e>
+  10004a:	8b 45 f8             	mov    -0x8(%ebp),%eax
+  10004d:	89 45 f4             	mov    %eax,-0xc(%ebp)
+  100050:	83 45 f8 01          	addl   $0x1,-0x8(%ebp)
+  100054:	83 7d f8 63          	cmpl   $0x63,-0x8(%ebp)
+  100058:	7e d8                	jle    100032 <select_sort+0x20>
+  10005a:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  10005d:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  100064:	89 45 f0             	mov    %eax,-0x10(%ebp)
+  100067:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  10006a:	8b 14 85 60 11 10 00 	mov    0x101160(,%eax,4),%edx
+  100071:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  100074:	89 14 85 60 11 10 00 	mov    %edx,0x101160(,%eax,4)
+  10007b:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  10007e:	8b 55 f0             	mov    -0x10(%ebp),%edx
+  100081:	89 14 85 60 11 10 00 	mov    %edx,0x101160(,%eax,4)
+  100088:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  10008c:	83 7d fc 62          	cmpl   $0x62,-0x4(%ebp)
+  100090:	7e 8f                	jle    100021 <select_sort+0xf>
+  100092:	90                   	nop
+  100093:	c9                   	leave  
+  100094:	c3                   	ret    
+
+00100095 <main>:
+  100095:	55                   	push   %ebp
+  100096:	89 e5                	mov    %esp,%ebp
+  100098:	83 ec 10             	sub    $0x10,%esp
+  10009b:	e8 72 ff ff ff       	call   100012 <select_sort>
+  1000a0:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  1000a7:	eb 19                	jmp    1000c2 <main+0x2d>
+  1000a9:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  1000ac:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  1000b3:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+  1000b6:	74 06                	je     1000be <main+0x29>
+  1000b8:	b8 01 00 00 00       	mov    $0x1,%eax
+  1000bd:	d6                   	(bad)  
+  1000be:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  1000c2:	83 7d fc 63          	cmpl   $0x63,-0x4(%ebp)
+  1000c6:	7e e1                	jle    1000a9 <main+0x14>
+  1000c8:	e8 45 ff ff ff       	call   100012 <select_sort>
+  1000cd:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  1000d4:	eb 19                	jmp    1000ef <main+0x5a>
+  1000d6:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  1000d9:	8b 04 85 60 11 10 00 	mov    0x101160(,%eax,4),%eax
+  1000e0:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+  1000e3:	74 06                	je     1000eb <main+0x56>
+  1000e5:	b8 01 00 00 00       	mov    $0x1,%eax
+  1000ea:	d6                   	(bad)  
+  1000eb:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  1000ef:	83 7d fc 63          	cmpl   $0x63,-0x4(%ebp)
+  1000f3:	7e e1                	jle    1000d6 <main+0x41>
+  1000f5:	b8 00 00 00 00       	mov    $0x0,%eax
+  1000fa:	d6                   	(bad)  
+  1000fb:	b8 00 00 00 00       	mov    $0x0,%eax
+  100100:	c9                   	leave  
+  100101:	c3                   	ret    

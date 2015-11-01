@@ -1,0 +1,56 @@
+
+obj/testcase/to-lower-case：     文件格式 elf32-i386
+
+
+Disassembly of section .text:
+
+00100000 <start>:
+  100000:	bd 00 00 00 00       	mov    $0x0,%ebp
+  100005:	bc 00 00 00 08       	mov    $0x8000000,%esp
+  10000a:	83 ec 10             	sub    $0x10,%esp
+  10000d:	e8 27 00 00 00       	call   100039 <main>
+
+00100012 <to_lower_case>:
+  100012:	55                   	push   %ebp
+  100013:	89 e5                	mov    %esp,%ebp
+  100015:	83 ec 04             	sub    $0x4,%esp
+  100018:	8b 45 08             	mov    0x8(%ebp),%eax
+  10001b:	88 45 fc             	mov    %al,-0x4(%ebp)
+  10001e:	80 7d fc 40          	cmpb   $0x40,-0x4(%ebp)
+  100022:	7e 0f                	jle    100033 <to_lower_case+0x21>
+  100024:	80 7d fc 5a          	cmpb   $0x5a,-0x4(%ebp)
+  100028:	7f 09                	jg     100033 <to_lower_case+0x21>
+  10002a:	0f b6 45 fc          	movzbl -0x4(%ebp),%eax
+  10002e:	83 c0 20             	add    $0x20,%eax
+  100031:	eb 04                	jmp    100037 <to_lower_case+0x25>
+  100033:	0f b6 45 fc          	movzbl -0x4(%ebp),%eax
+  100037:	c9                   	leave  
+  100038:	c3                   	ret    
+
+00100039 <main>:
+  100039:	55                   	push   %ebp
+  10003a:	89 e5                	mov    %esp,%ebp
+  10003c:	83 ec 10             	sub    $0x10,%esp
+  10003f:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+  100046:	eb 2a                	jmp    100072 <main+0x39>
+  100048:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  10004b:	0f be c0             	movsbl %al,%eax
+  10004e:	50                   	push   %eax
+  10004f:	e8 be ff ff ff       	call   100012 <to_lower_case>
+  100054:	83 c4 04             	add    $0x4,%esp
+  100057:	89 c2                	mov    %eax,%edx
+  100059:	8b 45 fc             	mov    -0x4(%ebp),%eax
+  10005c:	05 e0 10 10 00       	add    $0x1010e0,%eax
+  100061:	0f b6 00             	movzbl (%eax),%eax
+  100064:	38 c2                	cmp    %al,%dl
+  100066:	74 06                	je     10006e <main+0x35>
+  100068:	b8 01 00 00 00       	mov    $0x1,%eax
+  10006d:	d6                   	(bad)  
+  10006e:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  100072:	83 7d fc 7f          	cmpl   $0x7f,-0x4(%ebp)
+  100076:	7e d0                	jle    100048 <main+0xf>
+  100078:	b8 00 00 00 00       	mov    $0x0,%eax
+  10007d:	d6                   	(bad)  
+  10007e:	b8 00 00 00 00       	mov    $0x0,%eax
+  100083:	c9                   	leave  
+  100084:	c3                   	ret    
