@@ -24,8 +24,12 @@ static void do_execute()
 }
 
 #if DATA_BYTE == 2 || DATA_BYTE == 4
-make_instr_helper(rm)
-make_instr_helper(r)
+make_helper(concat5(instr, _, rm, _, SUFFIX))
+{
+    concat4(decode_, rm, _, SUFFIX)(eip+1);
+    do_execute();
+    return 0;
+}
 #endif // DATA_BYTE
 make_instr_helper(i)
 
