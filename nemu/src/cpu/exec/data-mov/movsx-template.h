@@ -6,7 +6,7 @@ static void do_execute()
 {
     DATA_TYPE_S src = (int8_t) op_src->val;
     OPERAND_W(op_dest, src);
-    sprintf(op_src->str, "%%%s", regsb[op_src->reg]);
+    //sprintf(op_src->str, "%%%s", regsb[op_src->reg]);
 
     print_asm_template2();
 }
@@ -18,7 +18,7 @@ static void do_movsx_l_w()
 {
     DATA_TYPE_S src = (int16_t) op_src->val;
     OPERAND_W(op_dest, src);
-    sprintf(op_src->str, "%%%s", regsw[op_src->reg]);
+    //sprintf(op_src->str, "%%%s", regsw[op_src->reg]);
 
     print_asm_template2();
 }
