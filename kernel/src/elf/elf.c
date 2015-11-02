@@ -41,7 +41,7 @@ uint32_t loader() {
         int i;
 	for(i=0; i< elf->e_phnum; ++i) {
 		/* Scan the program header table, load each segment into memory */
-		if(CHECK_PT_TYPE_LOAD(ph)) {
+		if(ph->p_type == PT_LOAD) {
                     char *mem = (void *) ph->p_vaddr;
                     ramdisk_read((uint8_t *)mem, ph->p_offset, ph->p_filesz);
                     memset(mem+ph->p_filesz, 0, ph->p_memsz-ph->p_filesz);
