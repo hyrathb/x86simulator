@@ -132,11 +132,11 @@ helper_fun opcode_table [256] = {
 /* 0x8c */	inv, lea, inv, pop_rm_v,
 /* 0x90 */	nop, xchg_a2r_v, xchg_a2r_v, xchg_a2r_v,
 /* 0x94 */	xchg_a2r_v, xchg_a2r_v, xchg_a2r_v, xchg_a2r_v,
-/* 0x98 */	inv, inv, inv, inv,
+/* 0x98 */	cbw_v, cwd_v, inv, inv,
 /* 0x9c */	inv, inv, inv, inv,
 /* 0xa0 */	mov_moffs2a_b, mov_moffs2a_v, mov_a2moffs_b, mov_a2moffs_v,
-/* 0xa4 */	movsb, movsv, inv, inv,
-/* 0xa8 */	test_i2a_b, test_i2a_v, stosb, stosv,
+/* 0xa4 */	movsb, movsv, cmps_b, cmps_v,
+/* 0xa8 */	test_i2a_b, test_i2a_v, stos_b, stos_v,
 /* 0xac */	inv, inv, inv, inv,
 /* 0xb0 */	mov_i2r_b, mov_i2r_b, mov_i2r_b, mov_i2r_b,
 /* 0xb4 */	mov_i2r_b, mov_i2r_b, mov_i2r_b, mov_i2r_b,
@@ -157,7 +157,7 @@ helper_fun opcode_table [256] = {
 /* 0xf0 */	inv, inv, inv, rep,
 /* 0xf4 */	inv, inv, group3_b, group3_v,
 /* 0xf8 */	inv, inv, inv, inv,
-/* 0xfc */	inv, inv, group4, group5
+/* 0xfc */	cld, inv, group4, group5
 };
 
 helper_fun _2byte_opcode_table [256] = {

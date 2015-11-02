@@ -3,7 +3,7 @@
 #include "cpu/decode/modrm.h"
 
 
-make_helper(stosb)
+make_helper(stos_b)
 {
     swaddr_write(cpu.edi, 1, cpu.al);
     if (cpu.eflags.DF)
@@ -14,31 +14,38 @@ make_helper(stosb)
     {
         ++cpu.edi;
     }
+    print_asm("stosb");
     return 1;
 }
 
-make_helper(stosv)
+make_helper(stos_w)
 {
-    uint32_t src;
-    int len;
-    if (ops_decoded.is_data_size_16)
-    {
-        src = cpu.ax;
-        len = 2;
-    }
-    else
-    {
-        src = cpu.eax;
-        len = 4;
-    }
-    swaddr_write(cpu.edi, len, src);
+    swaddr_write(cpu.edi, 2, cpu.ax);
     if (cpu.eflags.DF)
     {
-        cpu.edi -= len;
+        cpu.edi -= 2;
     }
     else
     {
-        cpu.edi += len;
+        cpu.edi += 2;
     }
+    print_asm("stosl");
     return 1;
 }
+
+make_helper(stos_l)
+{
+    swaddr_write(cpu.edi, 4, cpu.eax);
+    if (cpu.eflags.DF)
+    {
+        cpu.edi -= 4;
+    }
+    else
+    {
+        cpu.edi += 4;
+    }
+    print_asm("stosl");
+    return 1;
+}
+
+make_helper_v(stos)

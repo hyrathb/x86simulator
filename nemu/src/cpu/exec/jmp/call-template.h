@@ -41,7 +41,7 @@ make_helper(concat5(instr, _, rm, _, SUFFIX))
 {
     int len = concat4(decode_, rm, _, SUFFIX)(eip+1);
     do_execute(len);
-    return len+1;
+    return 0;
 }
 
 #include "cpu/exec/template-end.h"

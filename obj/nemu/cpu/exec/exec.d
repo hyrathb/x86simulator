@@ -8,7 +8,8 @@ obj/nemu/cpu/exec/exec.o: nemu/src/cpu/exec/exec.c \
  nemu/src/cpu/exec/data-mov/movsx.h nemu/src/cpu/exec/data-mov/movzx.h \
  nemu/src/cpu/exec/data-mov/movs.h nemu/include/cpu/exec/helper.h \
  nemu/include/cpu/decode/decode.h nemu/src/cpu/exec/data-mov/stos.h \
- nemu/src/cpu/exec/data-mov/setcc.h nemu/src/cpu/exec/arith/dec.h \
+ nemu/src/cpu/exec/data-mov/setcc.h nemu/src/cpu/exec/data-mov/cwd.h \
+ nemu/src/cpu/exec/data-mov/cbw.h nemu/src/cpu/exec/arith/dec.h \
  nemu/src/cpu/exec/arith/inc.h nemu/src/cpu/exec/arith/neg.h \
  nemu/src/cpu/exec/arith/imul.h nemu/src/cpu/exec/arith/mul.h \
  nemu/src/cpu/exec/arith/idiv.h nemu/src/cpu/exec/arith/div.h \
@@ -19,6 +20,7 @@ obj/nemu/cpu/exec/exec.o: nemu/src/cpu/exec/exec.c \
  nemu/src/cpu/exec/logic/sar.h nemu/src/cpu/exec/logic/shl.h \
  nemu/src/cpu/exec/logic/shr.h nemu/src/cpu/exec/logic/shrd.h \
  nemu/src/cpu/exec/logic/test.h nemu/src/cpu/exec/logic/cmp.h \
+ nemu/src/cpu/exec/logic/clst.h nemu/src/cpu/exec/logic/cmps.h \
  nemu/src/cpu/exec/string/rep.h nemu/src/cpu/exec/stack/push.h \
  nemu/src/cpu/exec/stack/pop.h nemu/src/cpu/exec/misc/misc.h \
  nemu/src/cpu/exec/jmp/jmp.h nemu/src/cpu/exec/jmp/je.h \

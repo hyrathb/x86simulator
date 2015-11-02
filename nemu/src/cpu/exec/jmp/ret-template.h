@@ -4,12 +4,27 @@
 
 static void do_execute ()
 {
-    cpu.eip = MEM_R(cpu.esp);
+    if (ops_decoded.is_data_size_16)
+    {
+        cpu.eip = swaddr_read(cpu.esp, 2);
+        cpu.esp += 2;
+    }
+    else
+    {
+        cpu.eip = swaddr_read(cpu.esp, 4);
+        cpu.esp +=4;
+    }
     cpu.esp += DATA_BYTE;
     cpu.esp += op_src->val;
     print_asm_template1();
 }
-make_instr_helper(i)
+
+make_helper(concat(ret_i_, SUFFIX))
+{
+    concat(decode_i_, SUFFIX)(eip);
+    do_execute();
+    return 1;
+}
 
 
 #include "cpu/exec/template-end.h"

@@ -3,7 +3,7 @@
 
 #include "cpu/exec/helper.h"
 
-make_helper(stosb);
-make_helper(stosv);
+make_helper(stos_b);
+make_helper(stos_v);
 
 #endif // STOS_H_INCLUDED

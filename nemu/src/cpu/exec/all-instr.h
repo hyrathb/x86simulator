@@ -7,6 +7,8 @@
 #include "data-mov/movs.h"
 #include "data-mov/stos.h"
 #include "data-mov/setcc.h"
+#include "data-mov/cwd.h"
+#include "data-mov/cbw.h"
 
 #include "arith/dec.h"
 #include "arith/inc.h"
@@ -30,6 +32,8 @@
 #include "logic/shrd.h"
 #include "logic/test.h"
 #include "logic/cmp.h"
+#include "logic/clst.h"
+#include "logic/cmps.h"
 
 #include "string/rep.h"
 
