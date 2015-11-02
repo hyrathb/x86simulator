@@ -9,6 +9,7 @@
 #include "data-mov/setcc.h"
 #include "data-mov/cwd.h"
 #include "data-mov/cbw.h"
+#include "data-mov/cmovc.h"
 
 #include "arith/dec.h"
 #include "arith/inc.h"
