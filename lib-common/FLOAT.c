@@ -1,12 +1,12 @@
 #include "FLOAT.h"
 
 FLOAT F_mul_F(FLOAT a, FLOAT b) {
-    unsigned long long ret = (((long long)a)*b >> 16);
+    unsigned long long ret = (((unsigned long long)a)*b >> 16);
     return ret;
 }
 
 FLOAT F_div_F(FLOAT a, FLOAT b) {
-    int ret = (a << 16)/b;
+    unsigned long long ret = (((unsigned long long)a) << 16)/b;
     return ret;
 }
 
