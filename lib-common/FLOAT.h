@@ -21,7 +21,13 @@ static inline FLOAT F_div_int(FLOAT a, int b) {
     return a/b;
 }
 
-FLOAT f2F(int);
+struct ieee754{
+    int tail:23;
+    int exp:8;
+    int sign:1;
+};
+
+FLOAT f2F(float);
 FLOAT F_mul_F(FLOAT, FLOAT);
 FLOAT F_div_F(FLOAT, FLOAT);
 FLOAT Fabs(FLOAT);

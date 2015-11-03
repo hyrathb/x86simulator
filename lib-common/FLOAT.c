@@ -1,15 +1,45 @@
 #include "FLOAT.h"
 
 FLOAT F_mul_F(FLOAT a, FLOAT b) {
-    return (((long long)a)*b >> 16);
+    unsigned long long ret = (((long long)a)*b >> 16);
+    return ret;
 }
 
 FLOAT F_div_F(FLOAT a, FLOAT b) {
-    return (a/b << 16);
+    int ret = (a << 16)/b;
+    return ret;
 }
 
-FLOAT f2F(int a) {
-    return (int)(a*65536);
+FLOAT f2F(float a) {
+    struct ieee754 *bytes = (void *)&a;
+    if (bytes->exp < 111)
+    {
+        return 0;
+    }
+    else if (bytes->exp > 181)
+    {
+        return 0x7fffffff;
+    }
+    else
+    {
+        unsigned int tail = 1 << 23 | (0x7fffff & bytes->tail);
+        int exp = bytes->exp - 127;
+        unsigned int i, f;
+        if (exp <=23)
+            i = tail >> (23 - exp);
+        else
+            i = tail << (exp - 23);
+        i <<= 16;
+        if (exp >= -9)
+            f = tail << (9 +exp);
+        else
+            f = tail >> (-exp - 9);
+        f >>= 16;
+        FLOAT result = (i & 0x7fff0000 ) | (f & 0xffff);
+        if (bytes->sign)
+            result = -result;
+        return result;
+    }
 }
 
 FLOAT Fabs(FLOAT a) {
