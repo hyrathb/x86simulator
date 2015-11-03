@@ -6,7 +6,7 @@
 #define make_cmovcc(name, cond) make_helper(concat3(name, _rm2r_, SUFFIX)) {\
     int len = decode_rm2r_b(eip+1);\
     if (cond)\
-    write_operand_b((op_dest), (op_src->val));\
+    concat(write_operand_, SUFFIX)((op_dest), (op_src->val));\
     print_asm(str(name) str(SUFFIX) " %s,%s", op_src->str, op_dest->str);\
     return len+1;\
 }
