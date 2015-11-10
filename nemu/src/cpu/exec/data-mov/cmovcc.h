@@ -4,7 +4,7 @@
 #include "cpu/exec/helper.h"
 
 #define make_cmovcc(name, cond) make_helper(concat3(name, _rm2r_, SUFFIX)) {\
-    int len = decode_rm2r_b(eip+1);\
+    int len = concat(decode_rm2r_, SUFFIX)(eip+1);\
     if (cond)\
     concat(write_operand_, SUFFIX)((op_dest), (op_src->val));\
     print_asm(str(name) str(SUFFIX) " %s,%s", op_src->str, op_dest->str);\

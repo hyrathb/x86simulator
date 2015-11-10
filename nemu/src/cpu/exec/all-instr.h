@@ -31,6 +31,7 @@
 #include "logic/shl.h"
 #include "logic/shr.h"
 #include "logic/shrd.h"
+#include "logic/shld.h"
 #include "logic/test.h"
 #include "logic/cmp.h"
 #include "logic/clst.h"
