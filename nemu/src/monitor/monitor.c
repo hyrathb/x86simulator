@@ -1,10 +1,12 @@
 #include "nemu.h"
+#include "cpu/cache/l1_cache.h"
 
 #define ENTRY_START 0x100000
 
 extern uint8_t entry [];
 extern uint32_t entry_len;
 extern char *exec_file;
+extern cache_l1 l1_cache;
 
 void load_elf_tables(int, char *[]);
 void init_regex();
@@ -92,4 +94,11 @@ void restart() {
 
 	/*Set the initial value for eflags*/
 	cpu.eflags.reg = 0x00000002;
+
+	int i,j;
+	l1_cache.hit = 0;
+	l1_cache.instrs = 0;
+	for (i=0; i<CACHE_NUM; ++i)
+        for (j=0; j<CACHE_WAYS; ++j)
+            l1_cache.entries[i][j].valid = 0;
 }
