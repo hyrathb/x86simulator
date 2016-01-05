@@ -1,5 +1,6 @@
 #include "common.h"
 #include "cpu/cache/l1_cache.h"
+#include "cpu/cache/l2_cache.h"
 #include "misc.h"
 #define HW_MEM_SIZE (1<<27)
 
@@ -9,6 +10,7 @@ void dram_write(hwaddr_t, size_t, uint32_t);
 
 void l1_cache_get(cache_addr_l1 addr, uint8_t *temp)
 {
+    static int rand = 0;
     int i, last_num = -1;
     addr.addr &= ~CACHE_MASK;
     ++l1_cache.instrs;
@@ -27,19 +29,19 @@ void l1_cache_get(cache_addr_l1 addr, uint8_t *temp)
     }
     else
     {
-        uint32_t t[CACHE_BLOCK_SIZE/4];
-        for (i=0; i<CACHE_BLOCK_SIZE/4; ++i)
-            t[i] = dram_read(addr.addr + (i << 2), 4);
-
-        if (last_num < 0)
-            last_num = 0;
-
+        if (last_num  < 0)
+        {
+            last_num = rand;
+            rand = (rand + 1) % (1 << CACHE_NUM);
+        }
+        cache_addr_l2 l2;
+        l2.addr = addr.addr;
+        l2_cache_get(l2, (uint8_t *)l1_cache.entries[addr.num][last_num].buf);
         l1_cache.entries[addr.num][last_num].valid = 1;
         l1_cache.entries[addr.num][last_num].tag = addr.tag;
-        memcpy(l1_cache.entries[addr.num][last_num].buf, t, CACHE_BLOCK_SIZE);
-        memcpy(temp, t, CACHE_BLOCK_SIZE);
+        memcpy(temp, l1_cache.entries[addr.num][last_num].buf, CACHE_BLOCK_SIZE);
     }
-    //printf("%u memory instr, %u hit\n", l1_cache.instrs, l1_cache.hit);
+    //printf("%u memory instr, %u hit\n", l1_cache.instrs, l1_cache.hit + l2_cache.hit);
 }
 
 void l1_cache_put(cache_addr_l1 addr, void *data, uint8_t *mask)
@@ -53,6 +55,9 @@ void l1_cache_put(cache_addr_l1 addr, void *data, uint8_t *mask)
     {
         memcpy_with_mask(l1_cache.entries[addr.num][i].buf, data, CACHE_BLOCK_SIZE, mask);
     }
+    cache_addr_l2 l2;
+    l2.addr = addr.addr;
+    l2_cache_put(l2, data, mask, 0);
 }
 
 uint32_t l1_cache_read(hwaddr_t addr, size_t len)

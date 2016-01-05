@@ -1,5 +1,6 @@
 #include "nemu.h"
 #include "cpu/cache/l1_cache.h"
+#include "cpu/cache/l2_cache.h"
 
 #define ENTRY_START 0x100000
 
@@ -98,7 +99,12 @@ void restart() {
 	int i,j;
 	l1_cache.hit = 0;
 	l1_cache.instrs = 0;
+	l2_cache.hit = 0;
 	for (i=0; i<CACHE_NUM; ++i)
         for (j=0; j<CACHE_WAYS; ++j)
             l1_cache.entries[i][j].valid = 0;
+
+    for (i=0; i<CACHE_L2_NUM; ++i)
+        for (j=0; j<CACHE_L2_WAYS; ++j)
+            l2_cache.entries[i][j].valid = 0;
 }
