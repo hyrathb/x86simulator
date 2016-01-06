@@ -41,7 +41,6 @@ int l2_cache_get(cache_addr_l2 addr, uint8_t *temp)
     }
     else
     {
-        l2_write_back(addr.num, i);
         uint32_t t[CACHE_L2_BLOCK_SIZE/4];
         for (i=0; i<CACHE_L2_BLOCK_SIZE/4; ++i)
             t[i] = dram_read(addr.addr + (i << 2), 4);
@@ -49,9 +48,10 @@ int l2_cache_get(cache_addr_l2 addr, uint8_t *temp)
         if (last_num  < 0)
         {
             last_num = rand;
-            rand = (rand + 1) % (1 << CACHE_L2_NUM);
+            rand = (rand + 1) % (CACHE_L2_WAYS);
         }
 
+        l2_write_back(addr.num, last_num);
         l2_cache.entries[addr.num][last_num].valid = 1;
         l2_cache.entries[addr.num][last_num].dirty = 0;
         l2_cache.entries[addr.num][last_num].tag = addr.tag;

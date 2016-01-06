@@ -32,7 +32,7 @@ void l1_cache_get(cache_addr_l1 addr, uint8_t *temp)
         if (last_num  < 0)
         {
             last_num = rand;
-            rand = (rand + 1) % (1 << CACHE_NUM);
+            rand = (rand + 1) % (CACHE_WAYS);
         }
         cache_addr_l2 l2;
         l2.addr = addr.addr;
