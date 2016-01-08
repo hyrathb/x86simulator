@@ -10,6 +10,7 @@ int load_addr(swaddr_t eip, ModR_M *m, Operand *rm) {
 	swaddr_t addr = 0;
 
 	if(m->R_M == R_ESP) {
+            cpu.current_sreg = 2;
 		SIB s;
 		s.val = instr_fetch(eip + 1, 1);
 		base_reg = s.base;
@@ -20,6 +21,7 @@ int load_addr(swaddr_t eip, ModR_M *m, Operand *rm) {
 	}
 	else {
 		/* no SIB */
+		cpu.current_sreg = 3;
 		base_reg = m->R_M;
 		disp_offset = 1;
 	}
@@ -60,13 +62,13 @@ int load_addr(swaddr_t eip, ModR_M *m, Operand *rm) {
 	else { disp_buf[0] = '\0'; }
 
 	if(base_reg == -1) { base_buf[0] = '\0'; }
-	else { 
-		sprintf(base_buf, "%%%s", regsl[base_reg]); 
+	else {
+		sprintf(base_buf, "%%%s", regsl[base_reg]);
 	}
 
 	if(index_reg == -1) { index_buf[0] = '\0'; }
-	else { 
-		sprintf(index_buf, ",%%%s,%d", regsl[index_reg], 1 << scale); 
+	else {
+		sprintf(index_buf, ",%%%s,%d", regsl[index_reg], 1 << scale);
 	}
 
 	if(base_reg == -1 && index_reg == -1) {

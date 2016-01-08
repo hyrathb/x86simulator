@@ -4,6 +4,7 @@
 
 static void do_execute (int len) {
     cpu.esp -= DATA_BYTE;
+    cpu.current_sreg = SS;
     MEM_W(cpu.esp, cpu.eip+len);
     if (op_src->type == OP_TYPE_IMM)
     {

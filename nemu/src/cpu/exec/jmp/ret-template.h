@@ -4,6 +4,7 @@
 
 static void do_execute ()
 {
+    cpu.current_sreg = SS;
     if (ops_decoded.is_data_size_16)
     {
         cpu.eip = swaddr_read(cpu.esp, 2);

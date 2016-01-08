@@ -10,6 +10,7 @@
 #include "data-mov/cwd.h"
 #include "data-mov/cbw.h"
 #include "data-mov/cmovcc.h"
+#include "data-mov/lgdt.h"
 
 #include "arith/dec.h"
 #include "arith/inc.h"

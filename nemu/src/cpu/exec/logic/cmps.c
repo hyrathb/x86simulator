@@ -5,7 +5,9 @@
 make_helper(cmps_b)
 {
     uint8_t src, dst;
+    cpu.current_sreg = 0;
     src = swaddr_read(cpu.edi, 1);
+    cpu.current_sreg = 3;
     dst = swaddr_read(cpu.esi, 1);
     uint8_t result = dst - src;
 
@@ -41,7 +43,9 @@ make_helper(cmps_b)
 make_helper(cmps_w)
 {
     uint16_t src, dst;
+    cpu.current_sreg = 0;
     src = swaddr_read(cpu.di, 2);
+    cpu.current_sreg = 3;
     dst = swaddr_read(cpu.si, 2);
     uint16_t result = dst - src;
 
@@ -77,7 +81,9 @@ make_helper(cmps_w)
 make_helper(cmps_l)
 {
     uint32_t src, dst;
+    cpu.current_sreg = 0;
     src = swaddr_read(cpu.edi, 1);
+    cpu.current_sreg = 3;
     dst = swaddr_read(cpu.esi, 1);
     uint32_t result = dst - src;
 

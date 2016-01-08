@@ -169,6 +169,7 @@ static int cmd_x(char *args)
     char *nstr = strtok(args, " ");
     char *expr = nstr + strlen(nstr) + 1;
     int i, n=atoi(nstr);
+    cpu.current_sreg = 3;
     swaddr_t addr = cal_str(expr) & 0xfffffffc;
     printf("0x%x:", addr);
     for (i=0; i<n; ++i)
@@ -219,6 +220,7 @@ static void cal_bt(swaddr_t eip, uint32_t ebp, int num)
             if ((eip >= t->st_value) && (eip < (t->st_value + t->st_size)))
                 break;
     }
+    cpu.current_sreg = 2;
     char *func_name = strtab + (symtab+i)->st_name;
     int offset = eip - (symtab+i)->st_value;
     int argv[5];

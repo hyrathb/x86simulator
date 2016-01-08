@@ -6,6 +6,7 @@ static void do_execute()
 {
 #if DATA_BYTE == 2
     cpu.esp -= 2;
+    cpu.current_sreg = SS;
     swaddr_write(cpu.esp, 2, op_src->val);
 #else
     cpu.esp -= 4;

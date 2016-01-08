@@ -107,4 +107,6 @@ void restart() {
     for (i=0; i<CACHE_L2_NUM; ++i)
         for (j=0; j<CACHE_L2_WAYS; ++j)
             l2_cache.entries[i][j].valid = 0;
+
+    cpu.cr0.reg = 0;
 }

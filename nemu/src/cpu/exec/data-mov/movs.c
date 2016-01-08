@@ -5,7 +5,10 @@
 
 make_helper(movsb)
 {
-    swaddr_write(cpu.edi, 1, swaddr_read(cpu.esi, 1));
+    cpu.current_sreg = 3;
+    uint8_t result = swaddr_read(cpu.esi, 1);
+    cpu.current_sreg = 0;
+    swaddr_write(cpu.edi, 1, result);
     if (cpu.eflags.DF)
     {
         --cpu.edi;
@@ -26,7 +29,10 @@ make_helper(movsv)
         len = 2;
     else
         len = 4;
-    swaddr_write(cpu.edi, len, swaddr_read(cpu.esi, len));
+    cpu.current_sreg = 3;
+    uint32_t result = swaddr_read(cpu.esi, len);
+    cpu.current_sreg = 0;
+    swaddr_write(cpu.edi, len, result);
     if (cpu.eflags.DF)
     {
         cpu.edi -= len;

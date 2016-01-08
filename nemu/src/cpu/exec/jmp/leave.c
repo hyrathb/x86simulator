@@ -3,6 +3,7 @@
 
 make_helper(leave)
 {
+    cpu.current_sreg = 2;
     if (ops_decoded.is_data_size_16)
     {
         cpu.sp = cpu.bp;

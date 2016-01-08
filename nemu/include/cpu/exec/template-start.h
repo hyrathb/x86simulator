@@ -1,5 +1,10 @@
 #include "cpu/exec/helper.h"
 
+#define ES 0
+#define CS 1
+#define SS 2
+#define DS 3
+
 #if DATA_BYTE == 1
 
 #define SUFFIX b

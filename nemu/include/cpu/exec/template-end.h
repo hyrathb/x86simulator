@@ -11,3 +11,7 @@
 #undef OPERAND_W
 
 #undef MSB
+#undef ES
+#undef CS
+#undef SS
+#undef DS

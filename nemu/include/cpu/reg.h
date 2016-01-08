@@ -46,6 +46,59 @@ typedef struct
             uint16_t panding12;
         };
     };
+    union
+    {
+        struct
+        {
+            uint16_t seg[4];
+        };
+        struct
+        {
+            uint16_t es;
+            uint16_t cs;
+            uint16_t ss;
+            uint16_t ds;
+        };
+    };
+    struct
+    {
+        uint16_t limit;
+        uint32_t base;
+    } gdtr;
+    union
+    {
+        struct
+        {
+            uint32_t cr[4];
+        };
+        struct
+        {
+            union
+            {
+                uint32_t reg;
+                struct
+                {
+                    uint32_t pe:1;
+                    uint32_t mp:1;
+                    uint32_t em:1;
+                    uint32_t ts:1;
+                    uint32_t et:1;
+                    uint32_t reserved:26;
+                    uint32_t pg:1;
+                };
+            } cr0;
+            uint32_t cr1;
+            uint32_t cr2;
+            struct
+            {
+                uint32_t pad0                : 3;
+                uint32_t page_write_through  : 1;
+                uint32_t page_cache_disable  : 1;
+                uint32_t pad1                : 7;
+                uint32_t page_directory_base : 20;
+            } cr3;
+        };
+    };
     swaddr_t eip;
     union
     {
@@ -72,6 +125,8 @@ typedef struct
         };
     } eflags;
 
+    uint8_t current_sreg;
+
 } CPU_state;
 
 extern CPU_state cpu;
@@ -89,5 +144,6 @@ static inline int check_reg_index(int index)
 extern const char* regsl[];
 extern const char* regsw[];
 extern const char* regsb[];
+extern const char* regseg[];
 
 #endif

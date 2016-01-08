@@ -487,5 +487,6 @@ int cal_str(char *s)
             *(p++) = *t;
     }
     *p = 0;
+    cpu.current_sreg = 3;
     return do_cal_str(prosesed);
 }
