@@ -5,6 +5,7 @@
 uint32_t dram_read(hwaddr_t, size_t);
 void dram_write(hwaddr_t, size_t, uint32_t);
 uint32_t seg_translate(uint32_t addr, uint16_t len ,uint8_t current_sreg);
+uint32_t page_translate(lnaddr_t addr);
 
 /* Memory accessing interfaces */
 
@@ -19,11 +20,15 @@ void hwaddr_write(hwaddr_t addr, size_t len, uint32_t data) {
 }
 
 uint32_t lnaddr_read(lnaddr_t addr, size_t len) {
-	return hwaddr_read(addr, len);
+    Assert((addr & 4095) + len <= 4096, "WTF");
+    hwaddr_t hwaddr = (cpu.cr0.pe &&  cpu.cr0.pg)?page_translate(addr):addr;
+	return hwaddr_read(hwaddr, len);
 }
 
 void lnaddr_write(lnaddr_t addr, size_t len, uint32_t data) {
-	hwaddr_write(addr, len, data);
+    Assert((addr & 4095) + len <= 4096, "WTF");
+    hwaddr_t hwaddr = (cpu.cr0.pe && cpu.cr0.pg)?page_translate(addr):addr;
+	hwaddr_write(hwaddr, len, data);
 }
 
 uint32_t swaddr_read(swaddr_t addr, size_t len) {

@@ -37,6 +37,7 @@
 #include "logic/cmp.h"
 #include "logic/clst.h"
 #include "logic/cmps.h"
+#include "logic/setst.h"
 
 #include "string/rep.h"
 

@@ -158,7 +158,7 @@ helper_fun opcode_table [256] =
     /* 0xf0 */	inv, inv, inv, rep,
     /* 0xf4 */	inv, inv, group3_b, group3_v,
     /* 0xf8 */	inv, inv, inv, inv,
-    /* 0xfc */	cld, inv, group4, group5
+    /* 0xfc */	cld, setdf, group4, group5
 };
 
 helper_fun _2byte_opcode_table [256] =
@@ -248,10 +248,30 @@ lnaddr_t seg_translate(uint32_t addr, uint16_t len, uint8_t current_sreg)
     Assert((cpu.seg[current_sreg]  < cpu.gdtr.limit), "Not a valid gdt");
     uint32_t gdtaddr = (cpu.gdtr.base) + cpu.seg[current_sreg];
     uint32_t gdt[2];
-    gdt[0] = lnaddr_read(gdtaddr, 4);
-    gdt[1] = lnaddr_read(gdtaddr + 4, 4);
+    gdt[0] = hwaddr_read(gdtaddr, 4);
+    gdt[1] = hwaddr_read(gdtaddr + 4, 4);
     SegDesc *sd = (SegDesc * const)gdt;
     uint32_t base = (sd->base_31_24 | sd->base_23_16 | sd->base_15_0);
     Assert(len <= (sd->limit_19_16 |sd->limit_15_0), "Segment fault");
     return base + addr;
+}
+
+hwaddr_t page_translate(lnaddr_t addr)
+{
+    union
+    {
+        lnaddr_t addr;
+        struct
+        {
+            uint32_t offset:12;
+            uint32_t second:10;
+            uint32_t first:10;
+        };
+    } tmpaddr;
+    tmpaddr.addr = addr;
+    PDE pde = (PDE)hwaddr_read((cpu.cr3.page_directory_base << 12) + (tmpaddr.first * sizeof(PDE)), 4);
+    Assert(pde.present, "Page dic not valid.");
+    PTE pte = (PTE)hwaddr_read((pde.page_frame << 12) + (tmpaddr.second * sizeof(PTE)), 4);
+    Assert(pte.present, "Page entry not valid.");
+    return (pte.page_frame << 12) + tmpaddr.offset;
 }

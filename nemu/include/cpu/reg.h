@@ -89,13 +89,17 @@ typedef struct
             } cr0;
             uint32_t cr1;
             uint32_t cr2;
-            struct
+            union
             {
-                uint32_t pad0                : 3;
-                uint32_t page_write_through  : 1;
-                uint32_t page_cache_disable  : 1;
-                uint32_t pad1                : 7;
-                uint32_t page_directory_base : 20;
+                struct
+                {
+                    uint32_t pad0                : 3;
+                    uint32_t page_write_through  : 1;
+                    uint32_t page_cache_disable  : 1;
+                    uint32_t pad1                : 7;
+                    uint32_t page_directory_base : 20;
+                };
+                uint32_t reg;
             } cr3;
         };
     };
