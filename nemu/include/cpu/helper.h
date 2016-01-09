@@ -4,6 +4,7 @@
 #include "nemu.h"
 #include "cpu/decode/operand.h"
 #include "cpu/reg.h"
+#include "cpu/cache/tlb.h"
 #include "cpu/mmu.h"
 
 /* All function defined with 'make_helper' return the length of the operation. */

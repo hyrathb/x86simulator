@@ -1,6 +1,7 @@
 #include "nemu.h"
 #include "cpu/cache/l1_cache.h"
 #include "cpu/cache/l2_cache.h"
+#include "cpu/cache/tlb.h"
 
 #define ENTRY_START 0x100000
 
@@ -109,4 +110,9 @@ void restart() {
             l2_cache.entries[i][j].valid = 0;
 
     cpu.cr0.reg = 0;
+
+    cpu_tlb.req = 0;
+    cpu_tlb.hit = 0;
+    for (i=0; i<TLB_ENTRIES; ++i)
+        cpu_tlb.entries[i].valid = 0;
 }

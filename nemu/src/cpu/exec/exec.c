@@ -258,20 +258,6 @@ lnaddr_t seg_translate(uint32_t addr, uint16_t len, uint8_t current_sreg)
 
 hwaddr_t page_translate(lnaddr_t addr)
 {
-    union
-    {
-        lnaddr_t addr;
-        struct
-        {
-            uint32_t offset:12;
-            uint32_t second:10;
-            uint32_t first:10;
-        };
-    } tmpaddr;
-    tmpaddr.addr = addr;
-    PDE pde = (PDE)hwaddr_read((cpu.cr3.page_directory_base << 12) + (tmpaddr.first * sizeof(PDE)), 4);
-    Assert(pde.present, "Page dic not valid.");
-    PTE pte = (PTE)hwaddr_read((pde.page_frame << 12) + (tmpaddr.second * sizeof(PTE)), 4);
-    Assert(pte.present, "Page entry not valid.");
-    return (pte.page_frame << 12) + tmpaddr.offset;
+
+    return tlb_lookup(addr);
 }
